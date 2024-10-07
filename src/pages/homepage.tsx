@@ -16,10 +16,10 @@ export function Homepage() {
           id="Header"
           className="flex justify-center items-center lg:flex-row flex-col bg-brand-primary-20 lg:w-screen lg:h-screen w-[100%] h-auto"
         >
-          <div className=" responsive-width h-auto flex lg:flex-row flex-col items-center">
+          <div className=" responsive-width-pb responsive-width h-auto flex lg:flex-row flex-col items-center">
             <div className="text-left lg:w-3/4 md:w-[90%] mr-[50px]">
               <h1 className="mb-[16px] mt-[124px] w-full">Hi, I’m Fausto</h1>
-              <h5 className="w-full">
+              <h5 className="lg:w-[80%] w-full">
                 Thank you for stopping by! I’m a Senior Product Designer working
                 with small and large multi-disciplinary teams, leading large end
                 to end product initiatives with a holistic approach. I’m
@@ -29,7 +29,7 @@ export function Homepage() {
               <img
                 src={CompaniesLogoImg}
                 alt="Hero Image"
-                className="mt-5 md:pb-0 pb-6"
+                className="mt-5 md:pb-0 pb-6 lg:w-[80%] w-[100%] h-auto"
               ></img>
             </div>
             <img

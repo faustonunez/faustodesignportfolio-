@@ -14,7 +14,7 @@ export function Resume() {
         <div className="w-full flex md:flex-row flex-col justify-center">
           <div
             id="work and education"
-            className="md:w-3/4 w-full 2xl:pr-[20%] pr-[10%]  flex-col justify-center"
+            className=" w-full lg:pr-[30%] pr-[10%]  flex-col justify-center"
           >
             <div id="WorkExperience" className="w-full">
               <h6 className="mb-5 ">Work experience</h6>

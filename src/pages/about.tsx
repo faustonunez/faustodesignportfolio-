@@ -7,9 +7,9 @@ export function About() {
       <div className="flex  justify-center items-center  bg-brand-primary-20 md:w-screen md:h-screen w-[100%] h-auto">
         <div
           id="Header"
-          className="   responsive-width  h-auto flex md:flex-row flex-col  items-center  "
+          className=" responsive-width-pb  responsive-width  h-auto flex md:flex-row flex-col  items-center  "
         >
-          <div className="text-left md:w-3/4 md:mr-[50px] w-full mr-0">
+          <div className="text-lef   md:w-3/4 md:mr-[200px]  w-full mr-0">
             <h2 className="mb-[16px] mt-[124px] w-full">About Me</h2>
             <div className="w-full prose prose-[54px]">
               <h5 className=" mb-6 w-auto">
