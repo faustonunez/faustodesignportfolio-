@@ -16,7 +16,7 @@ export function Homepage() {
           id="Header"
           className="flex justify-center items-center lg:flex-row flex-col bg-brand-primary-20 lg:w-screen lg:h-screen w-[100%] h-auto"
         >
-          <div className=" responsive-width-pb responsive-width h-auto flex lg:flex-row flex-col items-center">
+          <div className=" responsive-width-pb responsive-width h-auto flex lg:flex-row flex-col items-center lg:mt-0 md:mt-16 mt-10">
             <div className="text-left lg:w-3/4 md:w-[90%] mr-[50px]">
               <h1 className="mb-[16px] mt-[124px] w-full">Hi, I’m Fausto</h1>
               <h5 className="lg:w-[80%] w-full">
@@ -41,8 +41,8 @@ export function Homepage() {
           <Arrow className="lg:absolute lg:bottom-0 lg:mb-10 animate-bounce my-10" />
         </div>
         <div
-          id="PhotoCategories"
-          className="my-[80px] flex justify-center items-center gap-x-6"
+          id="Work"
+          className=" lg:mt-[200px] my-[80px] flex justify-center items-center gap-x-6"
         >
           <div className="flex responsive-width flex-col gap-40 justify-center items-center">
             <HorizontalCard
@@ -52,6 +52,8 @@ export function Homepage() {
               altText="Rethinking Asset Management"
               className="w-full h-auto"
               reverseOrder={false}
+              badges={["UX", "UI", "Design System"]}
+              circleColor="#EDEEF5"
             />
             <HorizontalCard
               image={WarnerArchiveImg}
@@ -60,6 +62,8 @@ export function Homepage() {
               altText="Systemizing a video streaming experience"
               className="w-full h-auto"
               reverseOrder={true}
+              badges={["UX", "UI", "Design System"]}
+              circleColor="#FBF3EE"
             />
             <HorizontalCard
               image={BuildbookImg}
@@ -68,6 +72,8 @@ export function Homepage() {
               altText="New approach to construction management"
               className="w-full h-auto"
               reverseOrder={false}
+              badges={["Mobile", "B2b", "B2C", "UX", "UI", "Design System"]}
+              circleColor="#F8F9FF"
             />
             <HorizontalCard
               image={CloudEstateImg}
@@ -76,6 +82,8 @@ export function Homepage() {
               altText="Rethinking Asset Management"
               className="w-full h-auto"
               reverseOrder={true}
+              badges={["SaaS", "FinTech", "UX", "UI", "Design System"]}
+              circleColor="#F6F3F3"
             />
           </div>
         </div>

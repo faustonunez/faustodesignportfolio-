@@ -7,7 +7,7 @@ export function MenuModal({ onClose }) {
     `relative ${isActive ? " text-light-text-dark" : "text-light-text-dark hover:text-light-text-dark"} no-underline`;
 
   return (
-    <div className="w-svw h-full bg-custom p-20  z-1 top-0 backdrop-blur-md fixed ">
+    <div className="w-svw h-full bg-custom p-20  z-50 top-0 backdrop-blur-md fixed ">
       <CloseIcon
         className="fixed top-10 right-10 cursor-pointer"
         onClick={onClose}
@@ -33,28 +33,6 @@ export function MenuModal({ onClose }) {
             onClick={onClose} // Add this line to each NavLink
           >
             Places
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/events"
-            className={({ isActive }) =>
-              `${getNavLinkClass({ isActive })} nav-link-underline ${isActive ? "nav-link-active" : ""}`
-            }
-            onClick={onClose} // Add this line to each NavLink
-          >
-            Events
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/motion"
-            className={({ isActive }) =>
-              `${getNavLinkClass({ isActive })} nav-link-underline ${isActive ? "nav-link-active" : ""}`
-            }
-            onClick={onClose} // Add this line to each NavLink
-          >
-            Motion
           </NavLink>
         </li>
       </ul>

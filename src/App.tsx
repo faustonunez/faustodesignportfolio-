@@ -18,7 +18,7 @@ import { MenuModal } from "./components/menu-modal";
 import { Homepage } from "./pages/homepage";
 import { People } from "./pages/people";
 import { About } from "./pages/about";
-import { Events } from "./pages/events";
+import { VideoPlayer } from "./pages/videoplayer";
 import { Motion } from "./pages/motion";
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
           {/* Set Homepage as default */}
           <Route path="/people" element={<People />} />
           <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
+          <Route path="/videoplayer" element={<VideoPlayer />} />
           <Route path="/motion" element={<Motion />} />
           {/* Redirect to Homepage if no match is found */}
           <Route path="*" element={<Navigate to="/" replace />} />

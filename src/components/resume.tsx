@@ -8,13 +8,13 @@ export function Resume() {
     >
       <div
         id="InnerWrapper"
-        className="responsive-width flex flex-col justify-center"
+        className="responsive-width flex flex-col justify-between"
       >
         <h2 className="mb-10 w-full">Resume</h2>
-        <div className="w-full flex md:flex-row flex-col justify-center">
+        <div className="w-full flex md:flex-row flex-col justify-between">
           <div
             id="work and education"
-            className=" w-full lg:pr-[30%] pr-[10%]  flex-col justify-center"
+            className=" md:w-[60%] w-full   flex-col justify-center"
           >
             <div id="WorkExperience" className="w-full">
               <h6 className="mb-5 ">Work experience</h6>
@@ -271,7 +271,7 @@ export function Resume() {
               />
             </div>
           </div>
-          <div id="Skills" className="md:w-1/4 w-full">
+          <div id="Skills" className=" md:w-[30%] w-full">
             <h6 className="mb-5 ">Skills</h6>
             <div className="mb-10">
               <h5>Tools</h5>
