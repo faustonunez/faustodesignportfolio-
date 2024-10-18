@@ -7,6 +7,7 @@ export interface HorizontalCardProps {
   reverseOrder?: boolean;
   badges?: string[];
   circleColor?: string; // New prop to control the background circle color
+  link?: string; // New prop for the link
 }
 
 interface BadgeProps {
@@ -30,8 +31,9 @@ export function HorizontalCard({
   reverseOrder = false,
   badges = [],
   circleColor = "#EDEEF5", // Default color for the circle
+  link, // New prop for the link
 }: HorizontalCardProps) {
-  return (
+  const cardContent = (
     <div
       className={`relative flex items-center lg:flex-row flex-col ${className}`}
     >
@@ -72,5 +74,13 @@ export function HorizontalCard({
         </div>
       </div>
     </div>
+  );
+
+  return link ? (
+    <a href={link} className="block">
+      {cardContent}
+    </a>
+  ) : (
+    cardContent
   );
 }

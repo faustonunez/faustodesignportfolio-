@@ -1,4 +1,4 @@
-import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/fausto-logo.svg?react";
 import BurgerMenu from "../assets/icon-burger.svg?react";
 import LinkedIn from "../assets/icon-linkedin.svg?react";
@@ -51,7 +51,7 @@ export function Nav({ onBurgerMenuClick }) {
           className="absolute left-1/2 transform -translate-x-1/2 text-center"
         >
           <NavLink to="/">
-            <Logo className="dark:text-white text-brand-secondary-100-text" />
+            <Logo className="dark:text-white " />
           </NavLink>
         </div>
         <div id="Links" className="flex justify-center">
@@ -85,7 +85,7 @@ export function Nav({ onBurgerMenuClick }) {
           />
           <div className="ml-10 items-center md:hidden flex">
             <div onClick={onBurgerMenuClick} className="cursor-pointer">
-              <BurgerMenu />
+              <BurgerMenu className=" dark:text-white text-brand-secondary-100-text" />
             </div>
           </div>
         </div>

@@ -16,11 +16,11 @@
     font-size: clamp(1.75rem, 3.5vw + 1rem, 3rem);
   }
   h4 {
-    @apply font-acumin font-normal leading-[140%];
+    @apply font-lato font-normal leading-tight;
     font-size: clamp(1.5rem, 3vw + 1rem, 2.25rem);
   }
   h5 {
-    @apply font-lato font-normal leading-normal text-brand-secondary-60 lg:text-[min(1.5vw,1.5rem)] text-[16px];
+    @apply font-lato font-normal leading-normal text-brand-secondary-60 text-[24px];
     /* font-size: clamp(1rem, 2.5vw + 1rem, 1.5rem); */
   }
   h6 {
@@ -28,7 +28,7 @@
     font-size: clamp(1rem, 2vw + 1rem, 1 rem);
   }
   p {
-    @apply font-lato font-normal text-[18px] leading-[150%];
+    @apply font-lato font-normal text-[18px] leading-[145%] text-[#2D373E];
   }
 
   .responsive-width {
@@ -37,6 +37,14 @@
 
   .responsive-width-pb {
     @apply 2xl:mb-[10%] lg:mb-[10%];
+  }
+
+  .responsive-width-case-study {
+    @apply xl:w-[900px] md:w-[720px] w-[90%];
+  }
+
+  .responsive-section-y-case-study {
+    @apply w-full md:py-[96px] py-[32px];
   }
 
   :root {

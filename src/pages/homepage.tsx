@@ -48,12 +48,15 @@ export function Homepage() {
             <HorizontalCard
               image={WBVideoPlayerImg}
               subtitle="WARNER BROS"
-              title="Rethinking Asset Management"
-              altText="Rethinking Asset Management"
+              title="Designing an adaptable
+video player"
+              altText="Designing an adaptable
+video player"
               className="w-full h-auto"
               reverseOrder={false}
               badges={["UX", "UI", "Design System"]}
               circleColor="#EDEEF5"
+              link="/videoplayer"
             />
             <HorizontalCard
               image={WarnerArchiveImg}
