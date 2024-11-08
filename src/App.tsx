@@ -18,7 +18,9 @@ import { MenuModal } from "./components/menu-modal";
 import { Homepage } from "./pages/homepage";
 import { People } from "./pages/people";
 import { About } from "./pages/about";
-import { VideoPlayer } from "./pages/videoplayer";
+import { VideoPlayer } from "./pages/VideoPlayer";
+import { Test } from "./pages/test";
+import { Warner } from "./pages/warner";
 import { Motion } from "./pages/motion";
 
 function App() {
@@ -38,7 +40,8 @@ function AppContent() {
   const closeMenuModal = () => setIsMenuModalOpen(false);
 
   // Determine if the current route is '/videoplayer'
-  const isDarkMode = location.pathname === "/videoplayer";
+  const isDarkMode =
+    location.pathname === "/videoplayer" || location.pathname === "/warner";
 
   return (
     <div className={`${isDarkMode ? "dark" : ""} bg-brand-greys-0`}>
@@ -50,6 +53,8 @@ function AppContent() {
         <Route path="/people" element={<People />} />
         <Route path="/about" element={<About />} />
         <Route path="/videoplayer" element={<VideoPlayer />} />
+        <Route path="/warner" element={<Warner />} />
+        <Route path="/test" element={<Test />} />
         <Route path="/motion" element={<Motion />} />
         {/* Redirect to Homepage if no match is found */}
         <Route path="*" element={<Navigate to="/" replace />} />

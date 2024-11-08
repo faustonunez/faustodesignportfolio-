@@ -152,3 +152,31 @@
     background-color: #d56d0d; /* Replace with your desired color */
   }
 }
+
+.custom-counter {
+  counter-reset: custom-counter; /* Initialize counter */
+  list-style: none; /* Remove default numbering */
+  padding-left: 0; /* Remove default padding */
+}
+
+.custom-li {
+  position: relative; /* Establish a positioning context */
+  padding-left: 2.5rem; /* Space for the custom number */
+}
+
+.custom-li::before {
+  counter-increment: custom-counter; /* Increment counter */
+  content: counter(custom-counter); /* Display counter value */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #e5a374;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}

@@ -1,4 +1,8 @@
-import VideoPlayerImg from "../assets/images/videoplayer/vp-hero-image0-flat.png";
+import Lottie from "lottie-react";
+import seedAnimation from "../assets/images/warner/38729-seedling.json";
+
+import WarnerArchiveImg from "../assets/images/warner/vp-hero-image0-flat.png";
+
 import WhiteboardImg from "../assets/images/videoplayer/kickoff-whiteboarding.png";
 import CompetitiveImg from "../assets/images/videoplayer/competitive-research.png";
 import OrgVideoPlayerImg from "../assets/images/videoplayer/original-video-player.png";
@@ -14,7 +18,6 @@ import Round3Img from "../assets/images/videoplayer/user-research-round3.png";
 import VPPattern from "../assets/images/videoplayer/vp-pattern-library.png";
 import Video1 from "../assets/images/videoplayer/video-player-mvp.mp4";
 import Video2 from "../assets/images/videoplayer/video-player-future.png";
-import HeaderImage from "../assets/images/videoplayer/header-image.png";
 
 import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
 import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
@@ -25,7 +28,7 @@ import { Subtitle } from "@/components/main-text";
 import { VideoPlayerComp } from "@/components/videoplayercomp";
 import { CardOther } from "@/components/cards-other";
 
-export function VideoPlayer() {
+export function Warner() {
   return (
     <div className="flex  justify-center items-center flex-col ">
       <div
@@ -37,15 +40,15 @@ export function VideoPlayer() {
           className=" responsive-width-pb  responsive-width  h-auto flex  flex-col justify-center  items-center 
             2xl:pt-[260px]  pt-[124px] "
         >
-          <div className=" xl:w-[60%] w-[90%]   flex justify-center items-center text-center mb-[2%] ">
+          <div className=" xl:w-[90%] w-[90%]   flex justify-center items-center text-center mb-[2%] ">
             <h2 className="mb-[16px] lg:mt-[124px] w-full text-white">
-              Designing an adaptable video player experience{" "}
+              Systematizing a web video streaming experience{" "}
             </h2>
           </div>
           <img
-            src={HeaderImage}
+            src={WarnerArchiveImg}
             alt="Hero Image"
-            className=" 2xl:w-[70%] xl:w-[100%] w-3/4 h-3/4 my-[0px] mt-[0px] md:pb-0 lg:pb-24 pb-6"
+            className=" 2xl:w-[70%] w-3/4 h-3/4 my-[0px] mt-[0px] md:pb-0 lg:pb-24 pb-6"
           ></img>
         </div>
       </div>
@@ -60,7 +63,7 @@ export function VideoPlayer() {
               <MainTextBlock
                 title={"About"}
                 description={
-                  "WB Digital Labs (subsidiary of Warner Bros.) was a fast-paced, innovative development division working to build the next generation of video-enabled entertainment brands"
+                  "DramaFever was a video streaming website owned by Warner Bros. that offered on-demand streaming videos of documentaries, movies, and TV shows with subtitles. DramaFever's content offering was both ad-supported for regular users and available in high definition for premium subscribers."
                 }
                 className="md:w-[60%] w-full"
               />
@@ -71,12 +74,92 @@ export function VideoPlayer() {
                   {
                     label: "Skills:",
                     description:
-                      "Prototyping, UI, UX,  Interaction Design, System Design, Qualitative Research",
+                      "Prototyping, UI, UX,  Interaction Design, System Design, Research",
                   },
                 ]}
                 className="md:w-[40%] w-full"
               />
             </div>
+          </div>
+        </div>
+        <div
+          id="section 1"
+          className="responsive-section-y-case-study bg-white  flex  lg:flex-col flex-col justify-center items-center "
+        >
+          <div
+            className=" responsive-width-case-study flex  flex-col space-y-4 justify-between mt-10
+          "
+          >
+            <Subtitle label="Discovery" />
+            <MainTextBlock
+              title={"The Problem"}
+              description={
+                "DramaFever's core business had always been video streaming. At the time that I joined, we had three different properties, DramaFever, Doc Club, and Shutter. The grand vision for the business had been to continue creating channels for niche audiences. The problem was that our existing infrastructure and workflow at that time did not allow us to quickly and easily create new channels. Every time, we had to start from scratch. We needed a faster and smarter way to work."
+              }
+              className="]"
+            />
+            <div className="flex  md:flex-row flex-col justify-between pt-8 space-x-8 md:space-y-0 space-y-8 ">
+              <div className="space-y-4">
+                <p>
+                  {" "}
+                  After internal research, stakeholder meetings, and user
+                  insights gathering, we came up with 3 goals:
+                </p>
+                <ol className="custom-counter space-y-4">
+                  <li className="custom-li text-left">
+                    <p>
+                      An expandable library of reusable modules and components,
+                      a more systematic approach to design and build
+                    </p>
+                  </li>
+                  <li className="custom-li text-left">
+                    <p>Easier maintenance for design and engineering</p>
+                  </li>
+                  <li className="custom-li text-left">
+                    <p>Better cross-team collaboration</p>
+                  </li>
+                </ol>
+                <h5 className="pt-10 font-bold">
+                  The “SEED” project was born.{" "}
+                </h5>
+              </div>
+              <Lottie animationData={seedAnimation} loop={false} />
+            </div>
+          </div>
+        </div>
+        <div
+          id="section 8 "
+          className="responsive-section-y-case-study bg-[#22292E] flex justify-center items-center "
+        >
+          <div className="flex  flex-col justify-between items-center space-y-4 ">
+            <div className="flex  flex-col justify-between items-center ">
+              <MainTextBlock
+                title={"The design process"}
+                description={
+                  "After stating the main problem, as well as doing our internal research, we did an audit session with the Creative Director and another UX Designer. During the session, we defined at a high level all the core flows, templates and micro-flows. "
+                }
+                className=" responsive-width-case-study"
+                isDarkTheme={true}
+              />
+              <MainTextBlock
+                title={""}
+                description={
+                  "With all this  on hand, we set a timeline to accomplish the goals in one-week design sprints,  we broke it down as follow:on hand, we set a timeline to accomplish the goals in one-week design sprints,  we broke it down as follow:"
+                }
+                className=" responsive-width-case-study"
+                isDarkTheme={true}
+              />
+              <div className="flex  flex-col justify-between items-center space-y-10 ">
+                <div className="flex  flex-col justify-between items-center space-y-3 ">
+                  <img
+                    src={Sketches1Img}
+                    alt="Whiteboard Image"
+                    className=" xl:w-[70%] w-[90%] h-auto "
+                  ></img>
+                </div>
+              </div>
+            </div>
+            <div />
           </div>
         </div>
         <div
@@ -103,6 +186,7 @@ export function VideoPlayer() {
             />
           </div>
         </div>
+
         <div
           id="section 3"
           className="responsive-section-y-case-study bg-[#CFDCE5]  flex  lg:flex-col flex-col justify-center items-center "
@@ -172,7 +256,7 @@ export function VideoPlayer() {
         </div>
         <div
           id="section 5"
-          className="responsive-section-y-case-study  bg-[#CFDCE5] flex  lg:flex-col flex-col justify-center items-center "
+          className="responsive-section-y-case-study bg-white  flex  lg:flex-col flex-col justify-center items-center "
         >
           <MainTextBlock
             title={"Measuring our video player against the competition"}
@@ -184,7 +268,7 @@ export function VideoPlayer() {
           <img
             src={CompetitiveImg}
             alt="Whiteboard Image"
-            className=" xl:w-[70%] w-[90%] h-auto "
+            className=" xl:w-[50%] w-[90%] h-auto "
           ></img>
         </div>
         <div
@@ -206,7 +290,7 @@ export function VideoPlayer() {
                   <img
                     src={OrgVideoPlayerImg}
                     alt="Whiteboard Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
+                    className=" xl:w-[50%] w-[90%] h-auto "
                   ></img>
                   <p className="text-[#5D7180]">
                     Original Warner Archive Designs
@@ -218,7 +302,7 @@ export function VideoPlayer() {
                       <img
                         src={EpisodeImg}
                         alt="Whiteboard Image"
-                        className=" xl:w-[70%]  w-[90%] h-auto "
+                        className=" xl:w-[50%]  w-[90%] h-auto "
                       ></img>
                       <p className="text-[#5D7180]">Episode Video Object</p>
                     </div>
@@ -228,7 +312,7 @@ export function VideoPlayer() {
                       <img
                         src={SeriesImg}
                         alt="Whiteboard Image"
-                        className=" xl:w-[70%] w-[90%] h-auto "
+                        className=" xl:w-[50%] w-[90%] h-auto "
                       ></img>
                       <p className="text-[#5D7180]">Series Video Object</p>
                     </div>
@@ -257,7 +341,7 @@ export function VideoPlayer() {
                   <img
                     src={DesignPrinciplesImg}
                     alt="Whiteboard Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
+                    className=" xl:w-[50%] w-[90%] h-auto "
                   ></img>
                   <p className="text-[#5D7180]">
                     Original Warner Archive Designs
@@ -287,7 +371,7 @@ export function VideoPlayer() {
                   <img
                     src={SketchesImg}
                     alt="Whiteboard Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
+                    className=" xl:w-[50%] w-[90%] h-auto "
                   ></img>
                 </div>
               </div>
@@ -295,33 +379,7 @@ export function VideoPlayer() {
             <div />
           </div>
         </div>
-        <div
-          id="section 8 "
-          className="responsive-section-y-case-study bg-[#22292E] flex justify-center items-center "
-        >
-          <div className="flex  flex-col justify-between items-center space-y-4 ">
-            <div className="flex  flex-col justify-between items-center ">
-              <MainTextBlock
-                title={"Wire-framing and feature prioritization"}
-                description={
-                  "After having gone through a few rounds of sketching and wire-framing, I helped abstract all the  components of the new video player at an atomic level. I worked with our product manager and engineer to prioritized the 30+ features based on its viability and feasibility."
-                }
-                className=" responsive-width-case-study"
-                isDarkTheme={true}
-              />
-              <div className="flex  flex-col justify-between items-center space-y-10 ">
-                <div className="flex  flex-col justify-between items-center space-y-3 ">
-                  <img
-                    src={Sketches1Img}
-                    alt="Whiteboard Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
-                  ></img>
-                </div>
-              </div>
-            </div>
-            <div />
-          </div>
-        </div>
+
         <div
           id="section 9"
           className="responsive-section-y-case-study bg-white  flex  lg:flex-col flex-col justify-center items-center "
@@ -516,49 +574,6 @@ export function VideoPlayer() {
                   ></img>
                 </div>
               </div>
-            </div>
-            <div />
-          </div>
-        </div>
-        <div
-          id="section 7"
-          className="responsive-section-y-case-study bg-white  flex justify-center items-center "
-        >
-          <div className="flex  flex-col justify-between items-center space-y-4 ">
-            <div className="flex  flex-col justify-between items-center ">
-              <MainTextBlock
-                title={"Outcomes & Lessons Learned"}
-                className=" responsive-width-case-study mb- .5"
-                description={undefined}
-              />
-              <ol className="custom-counter space-y-4 responsive-width-case-study">
-                <li className="custom-li text-left">
-                  <p>
-                    The results were a video player for which we had accounted
-                    for 30+ features, adaptable and scalable for all of our
-                    properties
-                  </p>
-                </li>
-                <li className="custom-li text-left">
-                  <p>
-                    We had conducted 3 usability tests, with a total of 15 users
-                    which helped us gain more confidence in our design decision
-                    making and helped us align with the special needs of our
-                    audience
-                  </p>
-                </li>
-                <li className="custom-li text-left">
-                  <p>
-                    We only had validated our MVP with one our properties at
-                    that time and further research needed to be done for the
-                    more advanced features and other channels. However, this set
-                    the ground for the start of the new video player experience
-                    and getting closer to giving our users a more cater and
-                    engaging experience.
-                  </p>
-                </li>
-              </ol>
-              <div className="flex  flex-col justify-between items-center space-y-10 "></div>
             </div>
             <div />
           </div>

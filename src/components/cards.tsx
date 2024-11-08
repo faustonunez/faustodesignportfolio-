@@ -1,3 +1,6 @@
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+
 export interface HorizontalCardProps {
   image: string;
   title: string;
@@ -6,8 +9,8 @@ export interface HorizontalCardProps {
   className?: string;
   reverseOrder?: boolean;
   badges?: string[];
-  circleColor?: string; // New prop to control the background circle color
-  link?: string; // New prop for the link
+  circleColor?: string;
+  link?: string;
 }
 
 interface BadgeProps {
@@ -30,26 +33,69 @@ export function HorizontalCard({
   className = "",
   reverseOrder = false,
   badges = [],
-  circleColor = "#EDEEF5", // Default color for the circle
-  link, // New prop for the link
+  circleColor = "#EDEEF5",
+  link,
 }: HorizontalCardProps) {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const circleRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const cardElement = cardRef.current;
+    const circleElement = circleRef.current;
+
+    if (!cardElement || !circleElement) return;
+
+    const handleMouseEnter = () => {
+      gsap.to(circleElement, {
+        scale: 1.1, // Increase size by 10%
+        duration: 0.5,
+        ease: "power2.out",
+        transformOrigin: "center",
+      });
+    };
+
+    const handleMouseLeave = () => {
+      gsap.to(circleElement, {
+        scale: 1, // Return to original size
+        duration: 0.5,
+        ease: "power2.out",
+        transformOrigin: "center",
+      });
+    };
+
+    cardElement.addEventListener("mouseenter", handleMouseEnter);
+    cardElement.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      // Clean up event listeners
+      cardElement.removeEventListener("mouseenter", handleMouseEnter);
+      cardElement.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
   const cardContent = (
     <div
-      className={`relative flex items-center lg:flex-row flex-col ${className}`}
+      ref={cardRef}
+      className={`group relative flex items-center lg:flex-row flex-col ${className}`}
     >
       <div
-        className={`relative flex justify-center items-center xl:w-[50%] lg:w-[40%] w-full h-auto ${reverseOrder ? "lg:order-2" : ""}`}
+        className={`relative flex justify-center items-center xl:w-[50%] lg:w-[40%] w-full h-auto ${
+          reverseOrder ? "lg:order-2" : ""
+        }`}
       >
         {/* Background Circle */}
         <div
+          ref={circleRef}
           className="absolute rounded-full"
           style={{
             backgroundColor: circleColor,
-            width: "60%", // Matches the image's width for a 1:1 aspect ratio
-            paddingTop: "60%", // Ensures the circle is perfectly square by setting the height relative to the width
+            width: "60%", // Set explicit width
+            height: "0", // Initialize height to 0
+            paddingBottom: "60%", // Use padding-bottom to set height equal to width
             top: "50%",
             left: "50%",
-            transform: "translate(-50%, -50%)", // Centers the circle
+            transform: "translate(-50%, -50%)",
+            transformOrigin: "center",
             zIndex: 0,
           }}
         ></div>
@@ -63,10 +109,12 @@ export function HorizontalCard({
       </div>
       <div
         id="content"
-        className={`xl:w-[50%] lg:w-[60%] w-full pl-4 md:mt-5 mt-5 ${reverseOrder ? "lg:order-1" : ""}`}
+        className={`xl:w-[50%] lg:w-[60%] w-full pl-4 md:mt-5 mt-5 ${
+          reverseOrder ? "lg:order-1" : ""
+        }`}
       >
         <h6 className="w-full">{subtitle}</h6>
-        <h3 className="mt-5 w-full">{title}</h3>
+        <h3 className="mt-5 w-full group-hover:underline">{title}</h3>
         <div className="flex flex-wrap gap-2 mt-2">
           {badges.map((badge, index) => (
             <Badge key={index} text={badge} />
