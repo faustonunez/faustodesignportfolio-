@@ -24,31 +24,16 @@ import { LabelDescription } from "@/components/main-text";
 import { Subtitle } from "@/components/main-text";
 import { VideoPlayerComp } from "@/components/videoplayercomp";
 import { CardOther } from "@/components/cards-other";
+import { HeaderMain } from "@/components/HeaderMain";
 
 export function VideoPlayer() {
   return (
     <div className="flex  justify-center items-center flex-col ">
-      <div
-        id="header"
-        className="flex  justify-center items-center  bg-[#1b1d27] md:w-screen md:h-screen w-[100%] h-auto "
-      >
-        <div
-          id="Header"
-          className=" responsive-width-pb  responsive-width  h-auto flex  flex-col justify-center  items-center 
-            2xl:pt-[260px]  pt-[124px] "
-        >
-          <div className=" xl:w-[60%] w-[90%]   flex justify-center items-center text-center mb-[2%] ">
-            <h2 className="mb-[16px] lg:mt-[124px] w-full text-white">
-              Designing an adaptable video player experience{" "}
-            </h2>
-          </div>
-          <img
-            src={HeaderImage}
-            alt="Hero Image"
-            className=" 2xl:w-[70%] xl:w-[100%] w-3/4 h-3/4 my-[0px] mt-[0px] md:pb-0 lg:pb-24 pb-6"
-          ></img>
-        </div>
-      </div>
+      <HeaderMain
+        headingText={"Designing an adaptable video player experiencee"}
+        imgSrc={VideoPlayerImg}
+      />
+
       <div className="w-full">
         <div
           id="section-1"

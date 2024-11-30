@@ -28,7 +28,7 @@
     font-size: clamp(1rem, 2vw + 1rem, 1 rem);
   }
   p {
-    @apply font-lato font-normal text-[18px] leading-[145%] text-[#2D373E];
+    @apply font-lato font-normal text-[16px] leading-[145%] text-[#2D373E];
   }
 
   .responsive-width {

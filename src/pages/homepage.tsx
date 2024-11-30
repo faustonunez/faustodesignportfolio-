@@ -67,6 +67,7 @@ video player"
               reverseOrder={true}
               badges={["UX", "UI", "Design System"]}
               circleColor="#FBF3EE"
+              link="/warner"
             />
             <HorizontalCard
               image={BuildbookImg}

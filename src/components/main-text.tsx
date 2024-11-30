@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface SubtitleProps {
   label: React.ReactNode;
   isDarkTheme?: boolean;
@@ -13,7 +15,7 @@ export function Subtitle({
 
   return (
     <h6
-      className={`responsive-width-case-study flex mt-10 ${themeClass} ${className}`}
+      className={`responsive-width-case-study flex mt-0 ${themeClass} ${className}`}
     >
       {label}
     </h6>
@@ -21,13 +23,15 @@ export function Subtitle({
 }
 
 export interface MainTextBlockProps {
-  title: React.ReactNode;
-  description: React.ReactNode;
+  title?: React.ReactNode;
+  description: React.ReactNode | React.ReactNode[]; // Allow single or multiple paragraphs
   isDarkTheme?: boolean;
   className?: string; // Root div className
   contentClassName?: string; // Content div className
   titleClassName?: string; // Title element className
   descriptionClassName?: string; // Description element className
+  showTitle?: boolean; // New prop to toggle title on/off
+  showDescription?: boolean; // New prop to toggle description on/off
 }
 
 export function MainTextBlock({
@@ -38,22 +42,40 @@ export function MainTextBlock({
   contentClassName = "",
   titleClassName = "",
   descriptionClassName = "",
+  showTitle = true, // Default to showing title
+  showDescription = true, // Default to showing description
 }: MainTextBlockProps) {
   const themeClass = isDarkTheme ? "text-white" : "text-black";
 
   return (
     <div className={`mb-10 ${className}`}>
       <div id="content" className={contentClassName}>
-        <h4
-          className={`md:mb-4 mb-2  font-bold ${themeClass} ${titleClassName}`}
-        >
-          {title}
-        </h4>
-        <p className={`${themeClass} ${descriptionClassName}`}>{description}</p>
+        {showTitle && title && (
+          <h4
+            className={`md:mb-4 mb-2 font-bold ${themeClass} ${titleClassName}`}
+          >
+            {title}
+          </h4>
+        )}
+        {showDescription &&
+          (Array.isArray(description) ? (
+            description.map((paragraph, index) => (
+              <React.Fragment key={index}>
+                <p className={`${themeClass} ${descriptionClassName}`}>
+                  {paragraph}
+                </p>
+                {index < description.length - 1 && <br />}{" "}
+                {/* Add <br /> except for the last item */}
+              </React.Fragment>
+            ))
+          ) : (
+            <p className={`${themeClass} ${descriptionClassName}`}>
+              {description}
+            </p>
+          ))}
       </div>
     </div>
   );
-  ``;
 }
 
 export interface LabelDescriptionProps {
