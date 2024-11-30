@@ -40,7 +40,6 @@ export function Warner() {
         <AboutProject
           subtitleLabel={"Introduction"}
           mainTextBlockProps={{
-            title: "About",
             description:
               "DramaFever was a video streaming website owned by Warner Bros. that offered on-demand streaming videos of documentaries, movies, and TV shows with subtitles. DramaFever's content offering was both ad-supported for regular users and available in high definition for premium subscribers.",
             className: "custom-class",
