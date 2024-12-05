@@ -72,10 +72,12 @@ export function Warner() {
             <MainTextBlock
               title={"The Problem"}
               description={
-                "DramaFever's core business had always been video streaming. At the time that | joined, we had three different properties, DramaFever, Doc Club, and Shutter. The grand vision for the business had been to continue creating channels for niche audiences. The problem was that our existing infrastructure and workflow at that time did not allow us to quickly and easily create new channels. Every time, we had to start from scratch. We needed a faster and smarter way to work."
+                "DramaFever's core business had always been video streaming. At the time that | joined, we had three different phad been to continue creating channels for niche audiences. The problem was that our existing infrastructure and workflow at that time did not allow us to quickly and easily create new channels. Every time, we had to start from scratch. We needed a faster and smarter way to work."
               }
               className="]"
             />
+            roperties, DramaFever, Doc Club, and Shutter. The grand vision for
+            the business
             <div className="flex  md:flex-row flex-col   pt-8 space-x-8 md:space-y-0 space-y-8 ">
               <div className="space-y-4">
                 <p>
@@ -181,9 +183,7 @@ export function Warner() {
             >
               <MainTextBlock
                 title={"Mapping system flows to most common user scenarios"}
-                description={
-                  "We had a wide-range audience, from a 7-year-old kid watching cartoons to a 70-year-old person watching old western movies. In this case, how could we create a watching experience that caters to each of these groups? Regardless of the demographics, they all have a common task and job to do when it comes to watching videos, that’s to explore, discover and watch in the most intuitive and frictionless way possible."
-                }
+                description={undefined}
                 className=" w-full mb-[16px]"
                 showDescription={false}
               />

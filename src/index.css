@@ -40,7 +40,7 @@
   }
 
   .responsive-width-case-study {
-    @apply xl:w-[900px] md:w-[720px] w-[90%];
+    @apply 2xl:w-[900px] xl:w-[800px] md:w-[720px] w-[90%];
   }
 
   .responsive-section-y-case-study {

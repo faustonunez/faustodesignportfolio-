@@ -33,6 +33,7 @@ export function AboutProject({
         {/* Main content */}
         <div className="flex md:flex-row flex-col">
           <MainTextBlock
+            title="About"
             {...mainTextBlockProps}
             className={`md:w-[60%] w-full ${mainTextBlockProps.className || ""}`}
           />
