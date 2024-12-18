@@ -2,7 +2,6 @@ import BBHeroImg from "../assets/images/buildbook/buildbook-hero-image0-flat.png
 import BBWireframesImg from "../assets/images/buildbook/buildbook-wireframes.png";
 import BBBrandingImg from "../assets/images/buildbook/buildbook-branding.png";
 
-import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
 import BBBuilderSVG from "../assets/images/buildbook/avatar-builder.svg";
 import BBContractorSVG from "../assets/images/buildbook/avatars-contractor.svg";
 import BBBHomeownerSVG from "../assets/images/buildbook/avatars-home-owner.svg";
@@ -12,11 +11,10 @@ import BBBCreateProjectImg from "../assets/images/buildbook/creating-a-project.p
 import BBBCreateNewMesssageImg from "../assets/images/buildbook/create-a-new-message.png";
 import BBBPatternLibraryImg from "../assets/images/buildbook/pattern-library-3d.png";
 
-import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
+import { OtherProjects2 } from "@/components/other-projects";
 
-import { MainTextBlock } from "@/components/main-text";
-import { Subtitle } from "@/components/main-text";
-import { CardOther } from "@/components/cards-other";
+import { MainTextBlock, Subtitle } from "@/components/main-text";
+
 import { HeaderMain } from "@/components/HeaderMain";
 import { AboutProject } from "@/components/about-project";
 
@@ -59,7 +57,18 @@ export function Buildbook() {
             <MainTextBlock
               title={"My Role"}
               description={
-                "As Buildbook already had started materializing the app idea into some initial wireframes for mobile and web, as well as branding, I came on board to help advance the mobile native’s app visual language and expand on the various Buildbook’s user flows. I primarily worked with the head of product design who was driving the overall UX strategy for the project."
+                <>
+                  "As Buildbook already had started materializing the app idea
+                  into some initial wireframes for mobile and web, as well as
+                  branding,{" "}
+                  <strong>
+                    I came on board to help advance the mobile native’s app
+                    visual language and expand on the various Buildbook’s user
+                    flows.
+                  </strong>{" "}
+                  I primarily worked with the head of product design who was
+                  driving the overall UX strategy for the project."
+                </>
               }
               className=" responsive-width-case-study"
             />
@@ -70,9 +79,7 @@ export function Buildbook() {
                   alt="Buildbook Wireframes"
                   className="w-full h-auto"
                 />
-                <p className="text-[#5D7180]">
-                  Original Warner Archive Designs
-                </p>
+                <p className="text-[#5D7180]">Initial client’s wireframes</p>
               </div>
               <div className="flex flex-col items-center w-1/4">
                 <img
@@ -337,27 +344,38 @@ export function Buildbook() {
             />
           </div>
         </div>
+        {/*   Learnings */}
 
-        {/*   OTHER PROJECTS  */}
-        <div className=" bg-brand-primary-20">
-          <div className=" w-full flex justify-center pt-10 ">
-            <h3 className="responsive-width-case-study flex justify-center items-center ">
-              Other Projects
-            </h3>
-          </div>
-          <div className="flex justify-center space-x-0 mt-10">
-            <CardOther
-              image={BuildbookImg}
-              title={"New approach to construction management"}
-              className=" bg-[#f3f4f4]"
-            />
-            <CardOther
-              image={CloudEstateImg}
-              title={"Rethinking Asset Management"}
-              className=" bg-brand-tertiary-20"
-            />
+        <div className="responsive-section-y-case-study bg-white  flex justify-center items-center ">
+          <div className="flex  flex-col justify-between items-center space-y-4 ">
+            <div className="flex  flex-col justify-between items-center ">
+              <MainTextBlock
+                title={"Outcomes & Lessons Learned"}
+                className=" responsive-width-case-study mb- .5"
+                description={undefined}
+              />
+              <ol className="custom-counter space-y-4 responsive-width-case-study">
+                <li className="custom-li text-left">
+                  <p>
+                    We helped push Buildbook’s very first mobile app to the
+                    market
+                  </p>
+                </li>
+                <li className="custom-li text-left">
+                  <p>
+                    We put together a pattern library that helped shape the
+                    future design iterations of the mobile app
+                  </p>
+                </li>
+              </ol>
+              <div className="flex  flex-col justify-between items-center space-y-10 "></div>
+            </div>
           </div>
         </div>
+
+        {/*   OTHER PROJECTS  */}
+
+        <OtherProjects2 />
       </div>
     </div>
   );

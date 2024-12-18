@@ -4,6 +4,7 @@ export interface CardOtherProps {
   altText?: string;
   className?: string;
   circleColor?: string; // New prop to control the background circle color
+  link?: string; // New prop to add a link to the entire card
 }
 
 export function CardOther({
@@ -11,9 +12,13 @@ export function CardOther({
   title,
   altText = "Image description",
   className = "",
+  link = "#", // Default link to "#"
 }: CardOtherProps) {
   return (
-    <div className={`py-32 relative flex flex-col items-center ${className}`}>
+    <a
+      href={link}
+      className={`py-32 relative flex flex-col items-center ${className}`}
+    >
       <div className="relative flex justify-center items-center w-full h-auto">
         <img
           src={image}
@@ -24,6 +29,6 @@ export function CardOther({
       <div id="content" className="w-full pl-4 mt-5">
         <h4 className="w-full text-center font-bold ">{title}</h4>
       </div>
-    </div>
+    </a>
   );
 }

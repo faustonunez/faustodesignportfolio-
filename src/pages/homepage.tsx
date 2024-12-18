@@ -78,6 +78,7 @@ video player"
               reverseOrder={false}
               badges={["Mobile", "B2b", "B2C", "UX", "UI", "Design System"]}
               circleColor="#F8F9FF"
+              link="/buildbook"
             />
             <HorizontalCard
               image={CloudEstateImg}
@@ -88,6 +89,7 @@ video player"
               reverseOrder={true}
               badges={["SaaS", "FinTech", "UX", "UI", "Design System"]}
               circleColor="#F6F3F3"
+              link="/cloudestate"
             />
           </div>
         </div>

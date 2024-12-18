@@ -14,16 +14,14 @@ import Round3Img from "../assets/images/videoplayer/user-research-round3.png";
 import VPPattern from "../assets/images/videoplayer/vp-pattern-library.png";
 import Video1 from "../assets/images/videoplayer/video-player-mvp.mp4";
 import Video2 from "../assets/images/videoplayer/video-player-future.png";
-import HeaderImage from "../assets/images/videoplayer/header-image.png";
 
-import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
-import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
+import { OtherProjects1 } from "@/components/other-projects";
 
 import { MainTextBlock } from "@/components/main-text";
 import { LabelDescription } from "@/components/main-text";
 import { Subtitle } from "@/components/main-text";
 import { VideoPlayerComp } from "@/components/videoplayercomp";
-import { CardOther } from "@/components/cards-other";
+
 import { HeaderMain } from "@/components/HeaderMain";
 
 export function VideoPlayer() {
@@ -120,7 +118,7 @@ export function VideoPlayer() {
           <MainTextBlock
             title={"Interviewing stakeholders"}
             description={
-              "At the start of the project we had a meeting to understand the current state of the video player. In this meeting our video player engineer explained there  were some out of the box UI available for video.js , but for more advanced or what we called “boutique features”, third party plugins and custom work needed to be done. This gave us a good idea of the potential future limitations and constraints, and help us prioritized better later on."
+              "We came up with a set of questions for the different departments, as well as liaisons for each channel to better understand their position and expectations about the video player. After speaking with 11 stakeholders, we analyzed and synthesized the information. This helped us keep in mind the top priorities for each stakeholder as we kept moving along."
             }
             className=" responsive-width-case-study"
           />
@@ -371,8 +369,8 @@ export function VideoPlayer() {
                   </li>
                   <li className="text-left">
                     <p>
-                      This test proved that users were able to locate and
-                      recognize the core video player function.
+                      Proved that users often would not need an extensive set of
+                      subtitles styling options
                     </p>
                   </li>
                   <li className="text-left">
@@ -548,25 +546,8 @@ export function VideoPlayer() {
             <div />
           </div>
         </div>
-        <div className=" bg-white">
-          <div className=" w-full flex justify-center pt-10 ">
-            <h3 className="responsive-width-case-study flex justify-center items-center ">
-              Other Projects
-            </h3>
-          </div>
-          <div className="flex justify-center space-x-0 mt-10">
-            <CardOther
-              image={BuildbookImg}
-              title={"New approach to construction management"}
-              className=" bg-[#f3f4f4]"
-            />
-            <CardOther
-              image={CloudEstateImg}
-              title={"Rethinking Asset Management"}
-              className=" bg-brand-tertiary-20"
-            />
-          </div>
-        </div>
+
+        <OtherProjects1 />
       </div>
     </div>
   );

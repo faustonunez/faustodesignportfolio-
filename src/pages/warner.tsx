@@ -17,8 +17,7 @@ import WBRedesign2Img from "../assets/images/warner/wb-redesign-2.png";
 import WBRedesign3Img from "../assets/images/warner/wb-redesign-3.png";
 import WBFinalDesignsImg from "../assets/images/warner/wa-final-designs.png";
 
-import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
-import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
+import { OtherProjects1 } from "@/components/other-projects";
 
 import { MainTextBlock } from "@/components/main-text";
 import { Subtitle } from "@/components/main-text";
@@ -283,7 +282,7 @@ export function Warner() {
             <MainTextBlock
               title={"Bringing it all together"}
               description={
-                "| mapped out d all the unique flows across all of the properties at that time, as well as the core functionality, basically the most essentials functions that a video streaming service will need to accomplish the user’s goal. This gave us a high-level view of all the fundamental flows and requirements that we needed to tackle moving forward."
+                "At the end of the project we had put together a design pattern library, and tech had also put together their own  that aligned with design."
               }
               className=" responsive-width-case-study"
             />
@@ -440,25 +439,7 @@ export function Warner() {
         </div>
 
         {/*   OTHER PROJECTS  */}
-        <div className=" bg-brand-primary-20">
-          <div className=" w-full flex justify-center pt-10 ">
-            <h3 className="responsive-width-case-study flex justify-center items-center ">
-              Other Projects
-            </h3>
-          </div>
-          <div className="flex justify-center space-x-0 mt-10">
-            <CardOther
-              image={BuildbookImg}
-              title={"New approach to construction management"}
-              className=" bg-[#f3f4f4]"
-            />
-            <CardOther
-              image={CloudEstateImg}
-              title={"Rethinking Asset Management"}
-              className=" bg-brand-tertiary-20"
-            />
-          </div>
-        </div>
+        <OtherProjects1 />
       </div>
     </div>
   );

@@ -43,8 +43,20 @@ export function Nav({ onBurgerMenuClick }) {
     <div className="w-full bg-brand-primary-20 dark:bg-[#1b1d27] flex justify-center py-10 fixed top-0 z-50">
       <div className="responsive-width flex relative justify-between items-center">
         <div id="SocialMedia" className="flex justify-center">
-          <LinkedIn className="dark:text-white text-brand-secondary-100-text" />
-          <Dribble className="dark:text-white text-brand-secondary-100-text" />
+          <a
+            href="https://www.linkedin.com/in/faustonunez/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedIn className="dark:text-white text-brand-secondary-100-text" />
+          </a>
+          <a
+            href="https://dribbble.com/faustonunez"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Dribble className="dark:text-white text-brand-secondary-100-text" />
+          </a>
         </div>
         <div
           id="Logo"

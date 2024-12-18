@@ -23,6 +23,7 @@ import { Test } from "./pages/test";
 import { Warner } from "./pages/warner";
 import { Motion } from "./pages/motion";
 import { Buildbook } from "./pages/buildbook";
+import { CloudEstate } from "./pages/cloudestate";
 
 function App() {
   return (
@@ -44,7 +45,9 @@ function AppContent() {
   const isDarkMode =
     location.pathname === "/videoplayer" ||
     location.pathname === "/warner" ||
+    location.pathname === "/cloudestate" ||
     location.pathname === "/buildbook";
+  location.pathname === "/cloudestate";
 
   return (
     <div className={`${isDarkMode ? "dark" : ""} bg-brand-greys-0`}>
@@ -58,6 +61,7 @@ function AppContent() {
         <Route path="/videoplayer" element={<VideoPlayer />} />
         <Route path="/warner" element={<Warner />} />
         <Route path="/buildbook" element={<Buildbook />} />
+        <Route path="/cloudestate" element={<CloudEstate />} />
         <Route path="/test" element={<Test />} />
         <Route path="/motion" element={<Motion />} />
         {/* Redirect to Homepage if no match is found */}
