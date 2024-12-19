@@ -126,7 +126,7 @@ export function Buildbook() {
                     {" "}
                     <img
                       src={BBContractorSVG}
-                      alt="Builder Avatar"
+                      alt="Contractor Avatar"
                       className="w-full h-auto"
                     />
                   </div>
@@ -137,7 +137,7 @@ export function Buildbook() {
                     {" "}
                     <img
                       src={BBBHomeownerSVG}
-                      alt="Builder Avatar"
+                      alt="Homeowner Avatar"
                       className="w-full h-auto"
                     />
                   </div>
@@ -190,7 +190,7 @@ export function Buildbook() {
             <div className="flex flex-col items-center w-full">
               <img
                 src={BBBScopeImg}
-                alt="Buildbook Wireframes"
+                alt="Buildbook Scope of Work"
                 className="w-full h-auto"
               />
             </div>
@@ -213,7 +213,7 @@ export function Buildbook() {
             <div className="flex  flex-row justify-center items-center space-y-10 w-[80%] max-w-[1300px]  ">
               <img
                 src={BBBInspirationImg}
-                alt="Buildbook Wireframes"
+                alt="Buildbook Inspiration"
                 className="w-full h-auto"
               />
             </div>

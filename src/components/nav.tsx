@@ -5,23 +5,31 @@ import LinkedIn from "../assets/icon-linkedin.svg?react";
 import Dribble from "../assets/icon-dribble.svg?react";
 import { Button } from "../components/button.tsx";
 
-export function Nav({ onBurgerMenuClick }) {
+interface NavProps {
+  onBurgerMenuClick: () => void;
+}
+
+export function Nav({ onBurgerMenuClick }: NavProps) {
   const navigate = useNavigate();
 
   // Function to handle the "Work" link click
-  const handleWorkClick = (e) => {
+  interface HandleWorkClickEvent {
+    e: React.MouseEvent<HTMLAnchorElement>;
+  }
+
+  const handleWorkClick = (e: HandleWorkClickEvent["e"]): void => {
     e.preventDefault();
     navigate("/#work"); // Navigate to the homepage with a hash.
 
     // Use a small delay to ensure the page has navigated.
     setTimeout(() => {
-      const workSection = document.getElementById("Work");
+      const workSection: HTMLElement | null = document.getElementById("Work");
       if (workSection) {
         // Scroll to the element with smooth behavior
-        const offset = 180;
-        const elementPosition =
+        const offset: number = 180;
+        const elementPosition: number =
           workSection.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - offset;
+        const offsetPosition: number = elementPosition - offset;
 
         window.scrollTo({
           top: offsetPosition,
@@ -32,7 +40,7 @@ export function Nav({ onBurgerMenuClick }) {
   };
 
   // Function to determine link active state
-  const getNavLinkClass = ({ isActive }) =>
+  const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
     `relative ${
       isActive
         ? "text-light-text-dark"
@@ -91,9 +99,9 @@ export function Nav({ onBurgerMenuClick }) {
           <Button
             className="ml-10 md:flex hidden"
             label="Let's Connect!"
-            onClick={function (): void {
-              throw new Error("Function not implemented.");
-            }}
+            onClick={() =>
+              (window.location.href = "mailto:faustonunez01@gmail.com")
+            }
           />
           <div className="ml-10 items-center md:hidden flex">
             <div onClick={onBurgerMenuClick} className="cursor-pointer">

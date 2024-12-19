@@ -21,7 +21,6 @@ import { OtherProjects1 } from "@/components/other-projects";
 
 import { MainTextBlock } from "@/components/main-text";
 import { Subtitle } from "@/components/main-text";
-import { CardOther } from "@/components/cards-other";
 import { HeaderMain } from "@/components/HeaderMain";
 import { AboutProject } from "@/components/about-project";
 
@@ -158,7 +157,7 @@ export function Warner() {
               <div className="flex  flex-col justify-between items-center space-y-3 ">
                 <img
                   src={SystemflowsImg}
-                  alt="Whiteboard Image"
+                  alt=" System flows and high-level requirements"
                   className=" xl:w-[60%] w-[70%] h-auto "
                 ></img>
               </div>
@@ -241,12 +240,12 @@ export function Warner() {
             />
             <img
               src={StatusUpate1Img}
-              alt="Warner User Flow Image"
+              alt="Status and Statuses Image"
               className=" xl:w-[1000px] w-[80%] h-auto "
             ></img>
             <img
               src={StatusUpate2Img}
-              alt="Warner User Flow Image"
+              alt="Status and Statuses Image"
               className=" xl:w-[1000px] w-[80%] h-auto pt-8"
             ></img>
           </div>
@@ -271,7 +270,7 @@ export function Warner() {
 
             <img
               src={PatternLibraryImg}
-              alt="Warner User Flow Image"
+              alt="Pattern Library Image"
               className=" max-w-[1500px]   xl:w-[90%] w-[80%] h-auto "
             />
           </div>
@@ -289,7 +288,7 @@ export function Warner() {
             <div className="flex  flex-col justify-between items-center space-y-10 ">
               <img
                 src={SeedPatternLibraryImg}
-                alt="Whiteboard Image"
+                alt="Pattern Library Image"
                 className=" max-w-[2000px] xl:w-[90%] w-[70%] h-auto "
               ></img>
             </div>
@@ -329,7 +328,7 @@ export function Warner() {
           <div className="flex  flex-col justify-between items-center space-y-3 w-full">
             <img
               src={WBOriginalDesignsImg}
-              alt="Whiteboard Image"
+              alt="Original Warner Archive Designs"
               className=" xl:w-[70%] w-[90%] h-auto "
             />
             <p className="text-[#5D7180]">Original Warner Archive Designs</p>
@@ -349,17 +348,17 @@ export function Warner() {
             <div className="flex  flex-col justify-between items-center space-y-10 ">
               <img
                 src={WBRedesign1Img}
-                alt="Redesign 1"
+                alt="WB Redesign 1"
                 className=" max-w-[2000px] xl:w-[90%] w-[70%] h-auto mt-6"
               />
               <img
                 src={WBRedesign2Img}
-                alt="Redesign 2"
+                alt="WB Redesign 2"
                 className=" max-w-[2000px] xl:w-[90%] w-[70%] h-auto mt-6"
               />
               <img
                 src={WBRedesign3Img}
-                alt="Redesign 2"
+                alt="WB Redesign 2"
                 className=" max-w-[2000px] xl:w-[90%] w-[70%] h-auto mt-6"
               />
             </div>
@@ -382,7 +381,7 @@ export function Warner() {
           <div className="flex  flex-col justify-between items-center space-y-3 w-full">
             <img
               src={WBFinalDesignsImg}
-              alt="Whiteboard Image"
+              alt="Final Designs"
               className="  w-[100%] h-auto "
             />
             <p className=" text-brand-greys-0">

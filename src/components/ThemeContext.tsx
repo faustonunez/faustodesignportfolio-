@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const ThemeContext = createContext({ theme: "light" });
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   const [theme, setTheme] = useState("light"); // default theme is light
 

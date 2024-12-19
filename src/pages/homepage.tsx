@@ -28,7 +28,7 @@ export function Homepage() {
               </h5>
               <img
                 src={CompaniesLogoImg}
-                alt="Hero Image"
+                alt="Logos of companies Fausto has worked with"
                 className="mt-5 md:pb-0 pb-6 lg:w-[80%] w-[100%] h-auto"
               ></img>
             </div>
@@ -48,10 +48,8 @@ export function Homepage() {
             <HorizontalCard
               image={WBVideoPlayerImg}
               subtitle="WARNER BROS"
-              title="Designing an adaptable
-video player"
-              altText="Designing an adaptable
-video player"
+              title="Designing an adaptable video player"
+              altText="Screenshot of Warner Bros adaptable video player design"
               className="w-full h-auto"
               reverseOrder={false}
               badges={["UX", "UI", "Design System"]}
@@ -62,7 +60,7 @@ video player"
               image={WarnerArchiveImg}
               subtitle="WARNER BROS"
               title="Systemizing a video streaming experience"
-              altText="Systemizing a video streaming experience"
+              altText="Screenshot of Warner Bros video streaming system design"
               className="w-full h-auto"
               reverseOrder={true}
               badges={["UX", "UI", "Design System"]}
@@ -73,7 +71,7 @@ video player"
               image={BuildbookImg}
               subtitle="BUILDBOOK"
               title="New approach to construction management"
-              altText="New approach to construction management"
+              altText="Screenshot of Buildbook construction management design"
               className="w-full h-auto"
               reverseOrder={false}
               badges={["Mobile", "B2b", "B2C", "UX", "UI", "Design System"]}
@@ -84,7 +82,7 @@ video player"
               image={CloudEstateImg}
               subtitle="CloudEstate"
               title="Rethinking Asset Management"
-              altText="Rethinking Asset Management"
+              altText="Screenshot of CloudEstate asset management design"
               className="w-full h-auto"
               reverseOrder={true}
               badges={["SaaS", "FinTech", "UX", "UI", "Design System"]}

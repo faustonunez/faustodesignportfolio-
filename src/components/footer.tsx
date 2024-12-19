@@ -4,7 +4,8 @@ export function Footer() {
       <h2 className=" w-full h-auto">Let’s connect!</h2>
       <h5 className=" w-full h-auto text-brand-greys-0">
         Want to work together? <br />
-        Just want to say hi? Drop me a faustonunez01@gmail.com.
+        Just want to say hi? Drop me a{" "}
+        <a href="mailto:faustonunez01@gmail.com">faustonunez01@gmail.com</a>.
       </h5>
     </div>
   );

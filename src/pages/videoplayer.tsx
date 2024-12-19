@@ -124,7 +124,7 @@ export function VideoPlayer() {
           />
           <img
             src={TrelloImg}
-            alt="Whiteboard Image"
+            alt=" Trelllo Image"
             className=" xl:w-[50%] w-[90%] h-auto "
           ></img>
           <div className="responsive-width-case-study grid md:grid-cols-2 grid-cols-1 gap-4 mt-10 text-center">
@@ -166,7 +166,7 @@ export function VideoPlayer() {
           />
           <img
             src={CompetitiveImg}
-            alt="Whiteboard Image"
+            alt="Competitive Analysis Image"
             className=" xl:w-[70%] w-[90%] h-auto "
           ></img>
         </div>
@@ -188,7 +188,7 @@ export function VideoPlayer() {
                 <div className="flex  flex-col justify-between items-center space-y-3 ">
                   <img
                     src={OrgVideoPlayerImg}
-                    alt="Whiteboard Image"
+                    alt="Original Warner Archive Designs"
                     className=" xl:w-[70%] w-[90%] h-auto "
                   ></img>
                   <p className="text-[#5D7180]">
@@ -200,7 +200,7 @@ export function VideoPlayer() {
                     <div className="flex flex-col  items-center space-y-3">
                       <img
                         src={EpisodeImg}
-                        alt="Whiteboard Image"
+                        alt="Episode Video Object"
                         className=" xl:w-[70%]  w-[90%] h-auto "
                       ></img>
                       <p className="text-[#5D7180]">Episode Video Object</p>
@@ -210,7 +210,7 @@ export function VideoPlayer() {
                     <div className="flex  flex-col items-start ">
                       <img
                         src={SeriesImg}
-                        alt="Whiteboard Image"
+                        alt="Series Video"
                         className=" xl:w-[70%] w-[90%] h-auto "
                       ></img>
                       <p className="text-[#5D7180]">Series Video Object</p>
@@ -239,7 +239,7 @@ export function VideoPlayer() {
                 <div className="flex  flex-col justify-between items-center space-y-3 ">
                   <img
                     src={DesignPrinciplesImg}
-                    alt="Whiteboard Image"
+                    alt="Design Principles"
                     className=" xl:w-[70%] w-[90%] h-auto "
                   ></img>
                   <p className="text-[#5D7180]">
@@ -269,7 +269,7 @@ export function VideoPlayer() {
                 <div className="flex  flex-col justify-between items-center space-y-3 ">
                   <img
                     src={SketchesImg}
-                    alt="Whiteboard Image"
+                    alt="Sketches Image"
                     className=" xl:w-[70%] w-[90%] h-auto "
                   ></img>
                 </div>
@@ -296,7 +296,7 @@ export function VideoPlayer() {
                 <div className="flex  flex-col justify-between items-center space-y-3 ">
                   <img
                     src={Sketches1Img}
-                    alt="Whiteboard Image"
+                    alt="Sketches Image"
                     className=" xl:w-[70%] w-[90%] h-auto "
                   ></img>
                 </div>
@@ -324,7 +324,7 @@ export function VideoPlayer() {
             <div className="flex  md:flex-row flex-col justify-between pt-8 space-x-8 md:space-y-0 space-y-8 ">
               <img
                 src={Round1Img}
-                alt="Whiteboard Image"
+                alt="User Testing Image"
                 className=" md:w-[40%] w-full h-fit"
               ></img>
               <div className="space-y-4">
@@ -355,7 +355,7 @@ export function VideoPlayer() {
             <div className="flex  md:flex-row flex-col justify-between pt-8 space-x-8 md:space-y-0 space-y-8 ">
               <img
                 src={Round2Img}
-                alt="Whiteboard Image"
+                alt="User Testing Image"
                 className=" md:w-[40%] w-full  h-fit"
               ></img>
               <div className="space-y-4">
@@ -394,7 +394,7 @@ export function VideoPlayer() {
             <div className="flex  md:flex-row flex-col justify-between pt-8 space-x-8 md:space-y-0 space-y-8 ">
               <img
                 src={Round3Img}
-                alt="Whiteboard Image"
+                alt="User Testing Image"
                 className=" md:w-[40%] w-full  h-fit"
               ></img>
               <div className="space-y-4">
@@ -449,7 +449,7 @@ export function VideoPlayer() {
                 <div className="flex  flex-col justify-between items-center space-y-3 ">
                   <img
                     src={VPPattern}
-                    alt="Whiteboard Image"
+                    alt="Pattern Library Image"
                     className=" xl:w-[70%] w-[90%] h-auto "
                   ></img>
                 </div>
@@ -494,7 +494,7 @@ export function VideoPlayer() {
                 <div className="flex  flex-col justify-between items-center space-y-3 ">
                   <img
                     src={Video2}
-                    alt="Whiteboard Image"
+                    alt="Video Player Future Image"
                     className=" xl:w-[1000px] lg:w-[800px]2 w-[90%] "
                   ></img>
                 </div>

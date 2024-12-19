@@ -78,7 +78,7 @@ export function CloudEstate() {
               <div className="flex flex-col justify-center items-center ">
                 <img
                   src={CEWireframeImg}
-                  alt="Whiteboard Image"
+                  alt="Wireframes Image"
                   className=" w-full h-auto"
                 ></img>
                 <p className="text-[#5D7180] pt-4 ">
@@ -138,7 +138,7 @@ export function CloudEstate() {
             <div className="flex  flex-row justify-center items-center space-y-10 w-[80%] max-w-[1300px]  ">
               <img
                 src={CEAbstractSystemImg}
-                alt="Buildbook Wireframes"
+                alt="Abstracting the system"
                 className="w-full h-auto"
               />
             </div>
@@ -186,7 +186,7 @@ export function CloudEstate() {
             <div className="flex flex-col items-center w-full">
               <img
                 src={CEAIImg}
-                alt="Buildbook Wireframes"
+                alt="Admin Interface"
                 className="w-3/4 h-auto"
               />
             </div>
@@ -232,7 +232,7 @@ export function CloudEstate() {
                 <div className="w-full h-auto bg-slate-700 md:ml-[-200px] min-w-[3q00px] ">
                   <img
                     src={CESketchesImg}
-                    alt="Brainstorming Sketches"
+                    alt="Sketches"
                     className="w-full h-auto"
                   />
                 </div>
@@ -256,7 +256,7 @@ export function CloudEstate() {
             <div className="flex  flex-row justify-center items-center space-y-10 w-full max-w-[1300px]  ">
               <img
                 src={CEDesingPrinciplesImg}
-                alt="Buildbook Wireframes"
+                alt="Design Principles"
                 className="w-full h-auto"
               />
             </div>
@@ -319,7 +319,7 @@ export function CloudEstate() {
               />
               <img
                 src={CECashManagementImg}
-                alt="Buildbook Wireframes"
+                alt="Cash Management Iterations"
                 className="w-full h-auto"
               />
             </div>
@@ -335,7 +335,7 @@ export function CloudEstate() {
               />
               <img
                 src={CETableResearchtImg}
-                alt="Buildbook Wireframes"
+                alt="Table Research"
                 className="w-full h-auto"
               />
             </div>
@@ -426,7 +426,7 @@ export function CloudEstate() {
             <div className="flex  flex-row justify-center items-center space-y-10 w-[80%] max-w-[1300px]  ">
               <img
                 src={CETDesignSystemImg}
-                alt="Buildbook Wireframes"
+                alt="Design System"
                 className="w-full h-auto"
               />
             </div>

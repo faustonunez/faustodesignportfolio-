@@ -1,6 +1,6 @@
 export interface ListItem {
   title: string;
-  text: string;
+  text: React.ReactNode; // Allow text to accept React elements
 }
 
 export interface HorizontalCardProps {

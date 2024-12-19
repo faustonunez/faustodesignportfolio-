@@ -118,7 +118,7 @@
     @apply bg-background text-foreground;
   }
   .bg-custom {
-    @apply bg-light-text-light/10; /* Tailwind's gray background */
+    @apply bg-brand-primary-30; /* Tailwind's gray background */
     background-image: url("./public/grain.png"),
       radial-gradient(
         151.92% 127.02% at 15.32% 21.04%,
@@ -179,4 +179,9 @@
   align-items: center;
   justify-content: center;
   font-weight: normal;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
