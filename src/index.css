@@ -4,19 +4,19 @@
 
 @layer base {
   h1 {
-    @apply font-acumin font-normal leading-[100%] text-brand-secondary-100-text;
+    @apply font-acumin font-black  leading-[100%] text-brand-secondary-100-text;
     font-size: clamp(2.5rem, 5vw + 1rem, 6.5rem);
   }
   h2 {
-    @apply font-acumin font-normal leading-[110%] -tracking-[0.02em];
+    @apply font-acumin font-black leading-[110%] -tracking-[0.02em];
     font-size: clamp(2rem, 4vw + 1rem, 4rem);
   }
   h3 {
-    @apply font-acumin font-normal leading-[100%] text-brand-secondary-100-text;
+    @apply font-acumin font-black leading-[100%] text-brand-secondary-100-text;
     font-size: clamp(1.75rem, 3.5vw + 1rem, 3rem);
   }
   h4 {
-    @apply font-lato font-normal leading-tight;
+    @apply font-lato font-bold leading-tight;
     font-size: clamp(1.5rem, 3vw + 1rem, 2.25rem);
   }
   h5 {

@@ -51,9 +51,7 @@ export function MainTextBlock({
     <div className={`mb-10 ${className}`}>
       <div id="content" className={contentClassName}>
         {showTitle && title && (
-          <h4
-            className={`md:mb-4 mb-2 font-bold ${themeClass} ${titleClassName}`}
-          >
+          <h4 className={`md:mb-4 mb-2  ${themeClass} ${titleClassName}`}>
             {title}
           </h4>
         )}
