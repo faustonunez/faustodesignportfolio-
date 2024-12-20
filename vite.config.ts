@@ -10,7 +10,6 @@ export default defineConfig({
     gifsicle: { optimizationLevel: 7 },
     mozjpeg: { quality: 80 },
     pngquant: { quality: [0.6, 0.8] },
-    svgo: { plugins: [{ removeViewBox: false }] },
     webp: { quality: 80 },
 }),],
   server: {
