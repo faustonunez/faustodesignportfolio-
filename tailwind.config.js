@@ -1,3 +1,5 @@
+import tailwindcssAnimate from 'tailwindcss-animate';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
@@ -23,8 +25,8 @@ export default {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
         'playfair': ['Playfair Display', 'serif'],
-        'acumin': ['acumin-pro-wide', 'sans-serif'],
-        'lato': ['Lato', 'sans-serif'],
+        'acumin': ['"Acumin Pro Wide Black"', 'sans-serif'],
+        'lato': ['"Lato Regular"', 'sans-serif'],
       },
       colors: {
         light: {
@@ -114,5 +116,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 };
