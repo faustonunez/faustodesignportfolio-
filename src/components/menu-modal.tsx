@@ -6,20 +6,17 @@ interface MenuModalProps {
 }
 
 export function MenuModal({ onClose }: MenuModalProps) {
-  // Your existing code for NavLinkClass
   const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
     `relative ${isActive ? " text-light-text-dark" : "text-light-text-dark hover:text-light-text-dark"} no-underline`;
 
   const navigate = useNavigate();
 
-  // Function to handle the "Work" link click
-  interface HandleWorkClickEvent {
-    e: React.MouseEvent<HTMLAnchorElement>;
-  }
-
-  const handleWorkClick = (e: HandleWorkClickEvent["e"]): void => {
+  const handleWorkClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault();
     navigate("/#work"); // Navigate to the homepage with a hash.
+
+    // Close the modal
+    onClose();
 
     // Use a small delay to ensure the page has navigated.
     setTimeout(() => {
@@ -61,7 +58,7 @@ export function MenuModal({ onClose }: MenuModalProps) {
             className={({ isActive }) =>
               `${getNavLinkClass({ isActive })} nav-link-underline ${isActive ? "nav-link-active" : ""}`
             }
-            onClick={onClose} // Add this line to each NavLink
+            onClick={onClose}
           >
             <h3>About</h3>
           </NavLink>
@@ -72,7 +69,7 @@ export function MenuModal({ onClose }: MenuModalProps) {
             className={({ isActive }) =>
               `${getNavLinkClass({ isActive })} nav-link-underline ${isActive ? "nav-link-active" : ""}`
             }
-            onClick={onClose} // Add this line to each NavLink
+            onClick={onClose}
           >
             <h3>Contact</h3>
           </NavLink>
