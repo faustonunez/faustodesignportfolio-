@@ -25,8 +25,8 @@ export default {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
         'playfair': ['Playfair Display', 'serif'],
-        'acumin': ['"Acumin Pro Wide Black"', 'sans-serif'],
-        'lato': ['"Lato Regular"', 'sans-serif'],
+        'acumin': ['acumin-pro-wide', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
       },
       colors: {
         light: {
