@@ -1,13 +1,4 @@
 import { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-  useLocation,
-} from "react-router-dom";
-
-import { ScrollToTop } from "./components/scrolltotop";
 
 // Component Imports
 import { Nav } from "./components/nav";
@@ -26,47 +17,50 @@ import { Buildbook } from "./pages/buildbook";
 import { CloudEstate } from "./pages/cloudestate";
 
 function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <AppContent />
-    </Router>
-  );
-}
-
-function AppContent() {
-  const location = useLocation();
+  const [currentPage, setCurrentPage] = useState("home");
   const [isMenuModalOpen, setIsMenuModalOpen] = useState(false);
 
   const toggleMenuModal = () => setIsMenuModalOpen(!isMenuModalOpen);
   const closeMenuModal = () => setIsMenuModalOpen(false);
 
-  // Determine if the current route is '/videoplayer'
-  const isDarkMode =
-    location.pathname === "/videoplayer" ||
-    location.pathname === "/warner" ||
-    location.pathname === "/cloudestate" ||
-    location.pathname === "/buildbook";
-  location.pathname === "/cloudestate";
+  // Determine if dark mode is active
+  const isDarkMode = [
+    "videoplayer",
+    "warner",
+    "cloudestate",
+    "buildbook",
+  ].includes(currentPage);
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case "home":
+        return <Homepage />;
+      case "people":
+        return <People />;
+      case "about":
+        return <About />;
+      case "videoplayer":
+        return <VideoPlayer />;
+      case "warner":
+        return <Warner />;
+      case "buildbook":
+        return <Buildbook />;
+      case "cloudestate":
+        return <CloudEstate />;
+      case "test":
+        return <Test />;
+      case "motion":
+        return <Motion />;
+      default:
+        return <Homepage />;
+    }
+  };
 
   return (
     <div className={`${isDarkMode ? "dark" : ""} bg-brand-greys-0`}>
-      <Nav onBurgerMenuClick={toggleMenuModal} />
+      <Nav onBurgerMenuClick={toggleMenuModal} onNavigate={setCurrentPage} />
       {isMenuModalOpen && <MenuModal onClose={closeMenuModal} />}
-      {/* Routes for the pages */}
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/people" element={<People />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/videoplayer" element={<VideoPlayer />} />
-        <Route path="/warner" element={<Warner />} />
-        <Route path="/buildbook" element={<Buildbook />} />
-        <Route path="/cloudestate" element={<CloudEstate />} />
-        <Route path="/test" element={<Test />} />
-        <Route path="/motion" element={<Motion />} />
-        {/* Redirect to Homepage if no match is found */}
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      {renderPage()}
       <Footer />
     </div>
   );

@@ -1,4 +1,3 @@
-import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/fausto-logo.svg?react";
 import BurgerMenu from "../assets/icon-burger.svg?react";
 import LinkedIn from "../assets/icon-linkedin.svg?react";
@@ -7,29 +6,22 @@ import { Button } from "../components/button.tsx";
 
 interface NavProps {
   onBurgerMenuClick: () => void;
+  onNavigate: (page: string) => void;
 }
 
-export function Nav({ onBurgerMenuClick }: NavProps) {
-  const navigate = useNavigate();
-
+export function Nav({ onBurgerMenuClick, onNavigate }: NavProps) {
   // Function to handle the "Work" link click
-  interface HandleWorkClickEvent {
-    e: React.MouseEvent<HTMLAnchorElement>;
-  }
-
-  const handleWorkClick = (e: HandleWorkClickEvent["e"]): void => {
+  const handleWorkClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault();
-    navigate("/#work"); // Navigate to the homepage with a hash.
-
-    // Use a small delay to ensure the page has navigated.
+    onNavigate("home"); // Navigate to homepage
     setTimeout(() => {
       const workSection: HTMLElement | null = document.getElementById("Work");
       if (workSection) {
         // Scroll to the element with smooth behavior
-        const offset: number = 180;
-        const elementPosition: number =
+        const offset = 180;
+        const elementPosition =
           workSection.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition: number = elementPosition - offset;
+        const offsetPosition = elementPosition - offset;
 
         window.scrollTo({
           top: offsetPosition,
@@ -40,7 +32,7 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
   };
 
   // Function to determine link active state
-  const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
+  const getNavLinkClass = (isActive: boolean) =>
     `relative ${
       isActive
         ? "text-light-text-dark"
@@ -70,9 +62,9 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
           id="Logo"
           className="absolute left-1/2 transform -translate-x-1/2 text-center"
         >
-          <NavLink to="/">
-            <Logo className="dark:text-white " />
-          </NavLink>
+          <a href="#" onClick={() => onNavigate("home")}>
+            <Logo className="dark:text-white" />
+          </a>
         </div>
         <div id="Links" className="flex justify-center">
           <ul className="md:flex justify-between gap-4 font-roboto items-center hidden">
@@ -80,20 +72,19 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
               <a
                 href="#work"
                 onClick={handleWorkClick}
-                className={`nav-link-underline text-brand-secondary-100-text  dark:text-white ${getNavLinkClass({ isActive: false })}`}
+                className={`nav-link-underline text-brand-secondary-100-text dark:text-white ${getNavLinkClass(false)}`}
               >
                 Work
               </a>
             </li>
             <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `${getNavLinkClass({ isActive })} text-brand-secondary-100-text dark:text-white  nav-link-underline ${isActive ? "nav-link-active" : ""}`
-                }
+              <a
+                href="#"
+                onClick={() => onNavigate("about")}
+                className={`nav-link-underline text-brand-secondary-100-text dark:text-white ${getNavLinkClass(false)}`}
               >
                 About
-              </NavLink>
+              </a>
             </li>
           </ul>
           <Button
@@ -105,7 +96,7 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
           />
           <div className="ml-10 items-center md:hidden flex">
             <div onClick={onBurgerMenuClick} className="cursor-pointer">
-              <BurgerMenu className=" dark:text-white text-brand-secondary-100-text" />
+              <BurgerMenu className="dark:text-white text-brand-secondary-100-text" />
             </div>
           </div>
         </div>
