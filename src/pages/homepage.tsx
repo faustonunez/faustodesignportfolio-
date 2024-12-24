@@ -19,7 +19,7 @@ export function Homepage() {
           <div className=" responsive-width-pb responsive-width h-auto flex lg:flex-row flex-col items-center lg:mt-0 md:mt-16 mt-10">
             <div className="text-left lg:w-3/4 md:w-[90%] mr-[50px]">
               <h1 className="mb-[16px] mt-[124px] w-full">
-                Hi, I’m Fausto Nunez
+                Hi, I’m Fausto Nunez Leonidas
               </h1>
               <h5 className="lg:w-[80%] w-full">
                 Thank you for stopping by! I’m a Senior Product Designer working
