@@ -1,9 +1,9 @@
 import Lottie from "lottie-react";
-import seedAnimation from "../assets/images/warner/38729-seedling.json";
+import seedAnimation from "@/assets/images/warner/38729-seedling.json";
 import { DesignProcessTable } from "@/components/design-process-table";
 
-import WarnerArchiveImg from "../assets/images/warner/vp-hero-image0-flat.png";
-import WarnerProcessImg from "../assets/images/warner/design-process-bk.jpg";
+import WarnerArchiveImg from "@/assets/images/warner/vp-hero-image0-flat.png";
+import WarnerProcessImg from "@/assets/images/warner/design-process-bk.jpg";
 import SystemflowsImg from "../assets/images/warner/warner-system-flows-and-requirements.png";
 import WarnerStickyNotesImg from "../assets/images/warner/wb-user-scenarios-sticky-notes.png";
 import WarnerUserFlowImg from "../assets/images/warner/wb-user-flow.png";
@@ -24,7 +24,7 @@ import { Subtitle } from "@/components/main-text";
 import { HeaderMain } from "@/components/HeaderMain";
 import { AboutProject } from "@/components/about-project";
 
-export function Warner() {
+export default function Page() {
   return (
     <div className="flex  justify-center items-center flex-col ">
       {/*   THIS IS THE HEADER  */}

@@ -18,7 +18,7 @@ import { MainTextBlock, Subtitle } from "@/components/main-text";
 import { HeaderMain } from "@/components/HeaderMain";
 import { AboutProject } from "@/components/about-project";
 
-export function Buildbook() {
+export default function Page() {
   return (
     <div className="flex  justify-center items-center flex-col ">
       {/*   THIS IS THE HEADER  */}

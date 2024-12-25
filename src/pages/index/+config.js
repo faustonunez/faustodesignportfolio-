@@ -1,4 +1,3 @@
 export default {
-    prerender: true,
-  };
-  
+  prerender: true, // Enables static generation for this page
+};

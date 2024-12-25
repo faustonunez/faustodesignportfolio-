@@ -1,0 +1,27 @@
+src/
+  pages/
+    index/
+      +page.tsx
+      +config.js
+    videoplayer/
+      +page.tsx
+      +config.js
+    about/
+      +page.tsx
+      +config.js
+    buildbook/
+      +page.tsx
+      +config.js
+    cloudestate/
+      +page.tsx
+      +config.js
+    motion/
+      +page.tsx
+      +config.js
+    videoplayer/
+      +page.tsx
+      +config.js
+    warner/
+      +page.tsx
+      +config.js
+
