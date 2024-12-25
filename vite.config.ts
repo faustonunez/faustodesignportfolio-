@@ -3,10 +3,11 @@ import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
 import svgr from 'vite-plugin-svgr'
 import imageminPlugin from 'vite-plugin-imagemin';
+import { vikeReact } from 'vike-react/vite';
 
 export default defineConfig({
   
-  plugins: [react(), svgr(), imageminPlugin({
+  plugins: [react(),vikeReact(), svgr(), imageminPlugin({
     gifsicle: { optimizationLevel: 7 },
     mozjpeg: { quality: 80 },
     pngquant: { quality: [0.6, 0.8] },
@@ -21,3 +22,4 @@ export default defineConfig({
     },
   },
 })
+
