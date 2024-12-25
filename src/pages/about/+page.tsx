@@ -1,7 +1,7 @@
 import { Resume } from "@/components/resume.tsx";
 import HeaderImg from "../assets/images/homepage/hero-image.png";
 
-export default function Page() {
+export function Page() {
   return (
     <div>
       <div className="flex  justify-center items-center  bg-brand-primary-20 md:w-screen md:h-screen w-[100%] h-auto">

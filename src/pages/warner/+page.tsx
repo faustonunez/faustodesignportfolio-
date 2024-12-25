@@ -24,7 +24,7 @@ import { Subtitle } from "@/components/main-text";
 import { HeaderMain } from "@/components/HeaderMain";
 import { AboutProject } from "@/components/about-project";
 
-export default function Page() {
+export function Page() {
   return (
     <div className="flex  justify-center items-center flex-col ">
       {/*   THIS IS THE HEADER  */}

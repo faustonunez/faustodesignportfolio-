@@ -24,7 +24,7 @@ import { VideoPlayerComp } from "@/components/videoplayercomp";
 
 import { HeaderMain } from "@/components/HeaderMain";
 
-export default function Page() {
+export function Page() {
   return (
     <div className="flex  justify-center items-center flex-col ">
       <HeaderMain
