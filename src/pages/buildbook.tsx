@@ -11,6 +11,7 @@ import BBBCreateProjectImg from "../assets/images/buildbook/creating-a-project.p
 import BBBCreateNewMesssageImg from "../assets/images/buildbook/create-a-new-message.png";
 import BBBPatternLibraryImg from "../assets/images/buildbook/pattern-library-3d.png";
 
+import { Helmet } from "react-helmet-async";
 import { OtherProjects2 } from "@/components/other-projects";
 
 import { MainTextBlock, Subtitle } from "@/components/main-text";
@@ -21,6 +22,13 @@ import { AboutProject } from "@/components/about-project";
 export function Buildbook() {
   return (
     <div className="flex  justify-center items-center flex-col ">
+      <Helmet>
+        <title> Buildbook </title>
+        <meta
+          name="description"
+          content="BuildBook is a construction management platform for home builders and remodelers that put their client’s experience first. It eliminates miscommunication and simplifies residential construction projects for home builders, remodelers and their clients, all in a delightfully simple app."
+        />
+      </Helmet>
       {/*   THIS IS THE HEADER  */}
       <HeaderMain
         headingText={"New approach to construction management"}

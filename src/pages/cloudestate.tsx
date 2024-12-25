@@ -10,6 +10,7 @@ import CECashManagementImg from "../assets/images/cloudestate/ce-cash-management
 import CETableResearchtImg from "../assets/images/cloudestate/table-inspiration-2.gif";
 import CETDesignSystemImg from "../assets/images/cloudestate/ce-design-system.png";
 import { OtherProjects2 } from "@/components/other-projects";
+import { Helmet } from "react-helmet-async";
 
 import { MainTextBlock } from "@/components/main-text";
 import { Subtitle } from "@/components/main-text";
@@ -20,6 +21,13 @@ import { AboutProject } from "@/components/about-project";
 export function CloudEstate() {
   return (
     <div className="flex  justify-center items-center flex-col ">
+      <Helmet>
+        <title> CloudEstate </title>
+        <meta
+          name="description"
+          content=" Designing a SaaS App in the Fintech Sector"
+        />
+      </Helmet>
       {/*   THIS IS THE HEADER  */}
       <HeaderMain
         headingText={"Designing a SaaS App in the Fintech Sector"}

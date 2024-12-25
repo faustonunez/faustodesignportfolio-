@@ -1,9 +1,14 @@
 import { Resume } from "@/components/resume.tsx";
 import HeaderImg from "../assets/images/homepage/hero-image.png";
+import { Helmet } from "react-helmet-async";
 
 export function About() {
   return (
     <div>
+      <Helmet>
+        <title>About Me</title>
+        <meta name="description" content="About Fausto's Career" />
+      </Helmet>
       <div className="flex  justify-center items-center  bg-brand-primary-20 md:w-screen md:h-screen w-[100%] h-auto">
         <div
           id="Header"

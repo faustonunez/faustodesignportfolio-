@@ -14,6 +14,7 @@ import Round3Img from "../assets/images/videoplayer/user-research-round3.png";
 import VPPattern from "../assets/images/videoplayer/vp-pattern-library.png";
 import Video1 from "../assets/images/videoplayer/video-player-mvp.mp4";
 import Video2 from "../assets/images/videoplayer/video-player-future.png";
+import { Helmet } from "react-helmet-async";
 
 import { OtherProjects1 } from "@/components/other-projects";
 
@@ -27,6 +28,13 @@ import { HeaderMain } from "@/components/HeaderMain";
 export function VideoPlayer() {
   return (
     <div className="flex  justify-center items-center flex-col ">
+      <Helmet>
+        <title> Video Player </title>
+        <meta
+          name="description"
+          content=" Designing an adaptable video player experience"
+        />
+      </Helmet>
       <HeaderMain
         headingText={"Designing an adaptable video player experiencee"}
         imgSrc={VideoPlayerImg}

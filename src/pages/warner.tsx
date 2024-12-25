@@ -16,6 +16,7 @@ import WBRedesign1Img from "../assets/images/warner/wb-redesign-1.png";
 import WBRedesign2Img from "../assets/images/warner/wb-redesign-2.png";
 import WBRedesign3Img from "../assets/images/warner/wb-redesign-3.png";
 import WBFinalDesignsImg from "../assets/images/warner/wa-final-designs.png";
+import { Helmet } from "react-helmet-async";
 
 import { OtherProjects1 } from "@/components/other-projects";
 
@@ -27,6 +28,13 @@ import { AboutProject } from "@/components/about-project";
 export function Warner() {
   return (
     <div className="flex  justify-center items-center flex-col ">
+      <Helmet>
+        <title> Warner Archive </title>
+        <meta
+          name="description"
+          content=" Warner Archive is a video streaming website owned by Warner Bros. that offered on-demand streaming videos of documentaries, movies, and TV shows with subtitles. DramaFever's content offering was both ad-supported for regular users and available in high definition for premium subscribers."
+        />
+      </Helmet>
       {/*   THIS IS THE HEADER  */}
       <HeaderMain
         headingText={"Systematizing a web video streaming experience"}

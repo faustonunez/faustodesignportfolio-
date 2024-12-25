@@ -4,6 +4,7 @@ import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
 import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
 import CompaniesLogoImg from "../assets/images/homepage/companies-logos.png";
 import Arrow from "../assets/images/homepage/arrow-down.svg?react";
+import { Helmet } from "react-helmet-async";
 
 import HeaderImg from "../assets/images/homepage/hero-image.png";
 import { HorizontalCard } from "../components/cards";
@@ -11,6 +12,13 @@ import { HorizontalCard } from "../components/cards";
 export function Homepage() {
   return (
     <div id="body" className="w-full flex justify-center">
+      <Helmet>
+        <title>Fausto Nuñez</title>
+        <meta
+          name="description"
+          content="I’m a Senior Product Designer working with small and large multi-disciplinary teams, leading large end to end product initiatives with a holistic approach. I’m currently running my own UX/UI design consultancy working with a variety of startups, enterprises and agencies."
+        />
+      </Helmet>
       <div className=" flex-col justify-center">
         <div
           id="Header"
@@ -19,7 +27,7 @@ export function Homepage() {
           <div className=" responsive-width-pb responsive-width h-auto flex lg:flex-row flex-col items-center lg:mt-0 md:mt-16 mt-10">
             <div className="text-left lg:w-3/4 md:w-[90%] mr-[50px]">
               <h1 className="mb-[16px] mt-[124px] w-full">
-                Hi, I’m Fausto Nunez
+                Hi, I’m Fausto Nuñez
               </h1>
               <h5 className="lg:w-[80%] w-full">
                 Thank you for stopping by! I’m a Senior Product Designer working
