@@ -34,8 +34,16 @@ export function About() {
               </h5>
               <h5 className=" mb-6">
                 If you don’t find me in my computer designing, you’ll find me
-                around NYC with friends taking photographs of the city or
-                traveling somewhere in the world.
+                around NYC with friends{" "}
+                <a
+                  href="https://www.instagram.com/faustonunez/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" underline"
+                >
+                  taking photographs of the city or traveling somewhere in the
+                  world.
+                </a>
               </h5>
             </div>
           </div>

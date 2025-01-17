@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
     "react-router-dom": "^7.1.0",
+    "sitemap": "^8.0.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7"
   },
