@@ -6,7 +6,7 @@ import CompaniesLogoImg from "../assets/images/homepage/companies-logos.png";
 import Arrow from "../assets/images/homepage/arrow-down.svg?react";
 import { Helmet } from "react-helmet-async";
 
-import HeaderImg from "../assets/images/homepage/hero-image.png";
+import HeaderImg from "../assets/images/homepage/hero-image-2.png";
 import { HorizontalCard } from "../components/cards";
 
 export function Homepage() {
@@ -43,7 +43,7 @@ export function Homepage() {
             <img
               src={HeaderImg}
               alt="Hero Image"
-              className="md:w-1/4 md:h-1/4 w-1/2 h-1/2 my-[0px] mt-[0px] md:pb-0 pb-6"
+              className="md:w-1/5 md:h-1/5 w-1/2 h-1/2 my-[0px] mt-[100px] md:pb-0 pb-0"
             ></img>
           </div>
           <Arrow className="lg:absolute lg:bottom-0 lg:mb-10 animate-bounce my-10" />
