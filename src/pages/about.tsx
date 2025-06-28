@@ -1,5 +1,5 @@
 import { Resume } from "@/components/resume.tsx";
-import HeaderImg from "../assets/images/homepage/hero-image.png";
+import HeaderImg from "../assets/images/homepage/about-portrait-image.png";
 import { Helmet } from "react-helmet-async";
 
 export function About() {
@@ -50,7 +50,7 @@ export function About() {
           <img
             src={HeaderImg}
             alt="Hero Image"
-            className="md:w-1/4 md:h-1/4  w-1/2 h-1/2 my-[0px] mt-[0px] md:pb-0 pb-6"
+            className="md:w-1/5 md:h-1/5  w-1/2 h-1/2 my-[0px] mt-[0px] md:pb-0 pb-6"
           ></img>
         </div>
       </div>
