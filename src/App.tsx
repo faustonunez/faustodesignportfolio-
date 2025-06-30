@@ -24,6 +24,7 @@ import { Warner } from "./pages/warner";
 
 import { Buildbook } from "./pages/buildbook";
 import { CloudEstate } from "./pages/cloudestate";
+import { TheMuseJDP } from "./pages/themuse-JDP"; // Importing TheMuseJDP component
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function AppContent() {
     location.pathname === "/cloudestate" ||
     location.pathname === "/buildbook";
   location.pathname === "/cloudestate";
+  location.pathname === "/TheMuse-JDP";
 
   return (
     <div className={`${isDarkMode ? "dark" : ""} bg-brand-greys-0`}>
@@ -62,6 +64,7 @@ function AppContent() {
         <Route path="/warner" element={<Warner />} />
         <Route path="/buildbook" element={<Buildbook />} />
         <Route path="/cloudestate" element={<CloudEstate />} />
+        <Route path="/themuse-JDP" element={<TheMuseJDP />} />
 
         {/* Redirect to Homepage if no match is found */}
         <Route path="*" element={<Navigate to="/" replace />} />
