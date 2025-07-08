@@ -1,5 +1,17 @@
 import React from "react";
 
+// Utility to prevent typographic widows by replacing the space between the last two words with a non-breaking space
+function preventWidows(text: string): string {
+  const words = text.trim().split(/\s+/);
+  if (words.length > 1) {
+    // Remove last two words
+    const lastTwo = words.splice(words.length - 2, 2);
+    // Rejoin, inserting a non-breaking space between the last two words
+    return [...words, lastTwo.join("\u00A0")].join(" ");
+  }
+  return text;
+}
+
 export interface SubtitleProps {
   label: React.ReactNode;
   isDarkTheme?: boolean;
@@ -24,14 +36,14 @@ export function Subtitle({
 
 export interface MainTextBlockProps {
   title?: React.ReactNode;
-  description: React.ReactNode | React.ReactNode[]; // Allow single or multiple paragraphs
+  description: React.ReactNode | React.ReactNode[];
   isDarkTheme?: boolean;
-  className?: string; // Root div className
-  contentClassName?: string; // Content div className
-  titleClassName?: string; // Title element className
-  descriptionClassName?: string; // Description element className
-  showTitle?: boolean; // New prop to toggle title on/off
-  showDescription?: boolean; // New prop to toggle description on/off
+  className?: string;
+  contentClassName?: string;
+  titleClassName?: string;
+  descriptionClassName?: string;
+  showTitle?: boolean;
+  showDescription?: boolean;
 }
 
 export function MainTextBlock({
@@ -42,17 +54,20 @@ export function MainTextBlock({
   contentClassName = "",
   titleClassName = "",
   descriptionClassName = "",
-  showTitle = true, // Default to showing title
-  showDescription = true, // Default to showing description
+  showTitle = true,
+  showDescription = true,
 }: MainTextBlockProps) {
   const themeClass = isDarkTheme ? "text-white" : "text-black";
+  // Process the title to avoid text widows
+  const processedTitle =
+    typeof title === "string" ? preventWidows(title) : title;
 
   return (
     <div className={`mb-10 ${className}`}>
       <div id="content" className={contentClassName}>
         {showTitle && title && (
-          <h4 className={`md:mb-4 mb-2  ${themeClass} ${titleClassName}`}>
-            {title}
+          <h4 className={`md:mb-4 mb-2 ${themeClass} ${titleClassName}`}>
+            {processedTitle}
           </h4>
         )}
         {showDescription &&
@@ -62,8 +77,7 @@ export function MainTextBlock({
                 <p className={`${themeClass} ${descriptionClassName}`}>
                   {paragraph}
                 </p>
-                {index < description.length - 1 && <br />}{" "}
-                {/* Add <br /> except for the last item */}
+                {index < description.length - 1 && <br />}
               </React.Fragment>
             ))
           ) : (
@@ -78,11 +92,11 @@ export function MainTextBlock({
 
 export interface LabelDescriptionProps {
   items: { label: React.ReactNode; description: React.ReactNode }[];
-  className?: string; // Root div className
-  itemClassName?: string; // Item div className
-  labelClassName?: string; // Label element className
-  descriptionClassName?: string; // Description element className
-  separatorClassName?: string; // Separator (hr) className
+  className?: string;
+  itemClassName?: string;
+  labelClassName?: string;
+  descriptionClassName?: string;
+  separatorClassName?: string;
 }
 
 export function LabelDescription({
@@ -94,7 +108,7 @@ export function LabelDescription({
   separatorClassName = "",
 }: LabelDescriptionProps) {
   return (
-    <div className={`flex flex-col  ${className}`}>
+    <div className={`flex flex-col ${className}`}>
       {items.map((item, index) => (
         <div key={index} className={`flex flex-col ${itemClassName}`}>
           <div className="flex items-start space-x-5 pb-3">

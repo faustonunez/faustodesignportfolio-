@@ -16,15 +16,12 @@ import { MenuModal } from "./components/menu-modal";
 
 // Page Components
 import { Homepage } from "./pages/homepage";
-
 import { About } from "./pages/about";
 import { VideoPlayer } from "./pages/videoplayer";
-
 import { Warner } from "./pages/warner";
-
 import { Buildbook } from "./pages/buildbook";
 import { CloudEstate } from "./pages/cloudestate";
-import { TheMuseJDP } from "./pages/themuse-JDP"; // Importing TheMuseJDP component
+import { TheMuseJDP } from "./pages/themuse-JDP";
 
 function App() {
   return (
@@ -42,33 +39,32 @@ function AppContent() {
   const toggleMenuModal = () => setIsMenuModalOpen(!isMenuModalOpen);
   const closeMenuModal = () => setIsMenuModalOpen(false);
 
-  // Determine if the current route is '/videoplayer'
-  const isDarkMode =
-    location.pathname === "/videoplayer" ||
-    location.pathname === "/warner" ||
-    location.pathname === "/cloudestate" ||
-    location.pathname === "/buildbook";
-  location.pathname === "/cloudestate";
-  location.pathname === "/TheMuse-JDP";
+  // list all the routes that should trigger dark mode
+  const darkRoutes = [
+    "/videoplayer",
+    "/warner",
+    "/cloudestate",
+    "/buildbook",
+    "/themuse-JDP",
+  ];
+  const isDarkMode = darkRoutes.includes(location.pathname);
 
   return (
     <div className={`${isDarkMode ? "dark" : ""} bg-brand-greys-0`}>
       <Nav onBurgerMenuClick={toggleMenuModal} />
       {isMenuModalOpen && <MenuModal onClose={closeMenuModal} />}
-      {/* Routes for the pages */}
+
       <Routes>
         <Route path="/" element={<Homepage />} />
-
         <Route path="/about" element={<About />} />
         <Route path="/videoplayer" element={<VideoPlayer />} />
         <Route path="/warner" element={<Warner />} />
         <Route path="/buildbook" element={<Buildbook />} />
         <Route path="/cloudestate" element={<CloudEstate />} />
         <Route path="/themuse-JDP" element={<TheMuseJDP />} />
-
-        {/* Redirect to Homepage if no match is found */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+
       <Footer />
     </div>
   );

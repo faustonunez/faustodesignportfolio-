@@ -47,6 +47,14 @@
     @apply w-full md:py-[96px] py-[32px];
   }
 
+  .case-study-image-border {
+    @apply p-2 rounded-[16px] bg-[#EDEEF5] xl:w-[70%] w-[90%] h-auto;
+  }
+
+  .case-study-image-rounded-border {
+    @apply rounded-[8px];
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;

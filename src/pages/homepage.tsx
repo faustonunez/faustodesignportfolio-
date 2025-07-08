@@ -2,6 +2,7 @@ import WBVideoPlayerImg from "../assets/images/homepage/wb-videoplayer-img.png";
 import WarnerArchiveImg from "../assets/images/homepage/warnerarchive-img.png";
 import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
 import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
+import TheMuseJpdImg from "../assets/images/homepage/themuse-jdp.png";
 import CompaniesLogoImg from "../assets/images/homepage/companies-logos.png";
 import Arrow from "../assets/images/homepage/arrow-down.svg?react";
 import { Helmet } from "react-helmet-async";
@@ -54,26 +55,15 @@ export function Homepage() {
         >
           <div className="flex responsive-width flex-col gap-40 justify-center items-center">
             <HorizontalCard
-              image={WBVideoPlayerImg}
-              subtitle="WARNER BROS"
-              title="Designing an adaptable video player"
-              altText="Screenshot of Warner Bros adaptable video player design"
-              className="w-full h-auto"
-              reverseOrder={false}
-              badges={["UX", "UI", "Design System"]}
-              circleColor="#EDEEF5"
-              link="/videoplayer"
-            />
-            <HorizontalCard
-              image={WarnerArchiveImg}
-              subtitle="WARNER BROS"
-              title="Systemizing a video streaming experience"
-              altText="Screenshot of Warner Bros video streaming system design"
+              image={TheMuseJpdImg}
+              subtitle="The Muse"
+              title="Driving Job Apply Growth for The Muse’s JDP"
+              altText="Screenshot of Buildbook construction management design"
               className="w-full h-auto"
               reverseOrder={true}
-              badges={["UX", "UI", "Design System"]}
-              circleColor="#FBF3EE"
-              link="/warner"
+              badges={["User Research", "B2C", "UX", "UI", "Design System"]}
+              circleColor="#F8F9FF"
+              link="/themuse-JDP"
             />
             <HorizontalCard
               image={BuildbookImg}
@@ -96,6 +86,28 @@ export function Homepage() {
               badges={["SaaS", "FinTech", "UX", "UI", "Design System"]}
               circleColor="#F6F3F3"
               link="/cloudestate"
+            />
+            <HorizontalCard
+              image={WBVideoPlayerImg}
+              subtitle="WARNER BROS"
+              title="Designing an adaptable video player"
+              altText="Screenshot of Warner Bros adaptable video player design"
+              className="w-full h-auto"
+              reverseOrder={false}
+              badges={["UX", "UI", "Design System"]}
+              circleColor="#EDEEF5"
+              link="/videoplayer"
+            />
+            <HorizontalCard
+              image={WarnerArchiveImg}
+              subtitle="WARNER BROS"
+              title="Systemizing a video streaming experience"
+              altText="Screenshot of Warner Bros video streaming system design"
+              className="w-full h-auto"
+              reverseOrder={true}
+              badges={["UX", "UI", "Design System"]}
+              circleColor="#FBF3EE"
+              link="/warner"
             />
           </div>
         </div>

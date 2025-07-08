@@ -1,7 +1,6 @@
-import VideoPlayerImg from "../assets/images/videoplayer/vp-hero-image0-flat.png";
 import WhiteboardImg from "../assets/images/videoplayer/kickoff-whiteboarding.png";
 import CompetitiveImg from "../assets/images/videoplayer/competitive-research.png";
-import OrgVideoPlayerImg from "../assets/images/videoplayer/original-video-player.png";
+import TheMuseJDPImg from "../assets/images/jdp/jpd-hero-image.png";
 import EpisodeImg from "../assets/images/videoplayer/episode-ia.png";
 import SeriesImg from "../assets/images/videoplayer/series-ia.png";
 import DesignPrinciplesImg from "../assets/images/videoplayer/design principles.png";
@@ -25,19 +24,21 @@ import { VideoPlayerComp } from "@/components/videoplayercomp";
 
 import { HeaderMain } from "@/components/HeaderMain";
 
-export function VideoPlayer() {
+export function TheMuseJDP() {
   return (
     <div className="flex  justify-center items-center flex-col ">
       <Helmet>
-        <title> Video Player </title>
+        <title> The Muse - JDP </title>
         <meta
           name="description"
-          content=" Designing an adaptable video player experience"
+          content=" Driving 40% Job Apply Growth for The Muse’s Job Details Page"
         />
       </Helmet>
       <HeaderMain
-        headingText={"Designing an adaptable video player experience"}
-        imgSrc={VideoPlayerImg}
+        headingText={
+          "Driving 40% Job Apply Growth for The Muse’s Job Details Page"
+        }
+        imgSrc={TheMuseJDPImg}
       />
 
       <div className="w-full">
@@ -51,18 +52,18 @@ export function VideoPlayer() {
               <MainTextBlock
                 title={"About"}
                 description={
-                  "WB Digital Labs (subsidiary of Warner Bros.) was a fast-paced, innovative development division working to build the next generation of video-enabled entertainment brands"
+                  "The Muse is the go-to destination for the next-generation workforce to research companies and careers. More than 70 million visitors each year trust The Muse, to help them win at work."
                 }
                 className="md:w-[60%] w-full"
               />
               <LabelDescription
                 items={[
-                  { label: "Client: ", description: "Warner Bros, DramaFever" },
-                  { label: "Role:", description: "Experience Designer" },
+                  { label: "Client: ", description: "The Muse" },
+                  { label: "Role:", description: "Senior Product Designer" },
                   {
                     label: "Skills:",
                     description:
-                      "Prototyping, UI, UX,  Interaction Design, System Design, Qualitative Research",
+                      "UX Design, UI Design, Prototyping, Usability Testing, User Research",
                   },
                 ]}
                 className="md:w-[40%] w-full"
@@ -195,7 +196,7 @@ export function VideoPlayer() {
               <div className="flex  flex-col justify-between items-center space-y-10 ">
                 <div className="flex  flex-col justify-between items-center space-y-3 ">
                   <img
-                    src={OrgVideoPlayerImg}
+                    src={TheMuseJDPImg}
                     alt="Original Warner Archive Designs"
                     className=" xl:w-[70%] w-[90%] h-auto "
                   ></img>
