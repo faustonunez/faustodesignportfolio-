@@ -11,7 +11,7 @@ interface FigmaEmbedProps {
 
 export const FigmaEmbed: React.FC<FigmaEmbedProps> = ({
   url,
-  width = "w-[1000px]",
+  width = "2xl:w-[900px] xl:w-[800px] md:w-[720px] w-[100%]",
   height = "h-[600px]",
 }) => (
   <div className={`${width} ${height} overflow-hidden rounded-lg shadow-lg`}>
