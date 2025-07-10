@@ -266,7 +266,7 @@ export function TheMuseJDP() {
               <MainTextBlock
                 title={"Narrowing it down to the MVP and subsequent versions"}
                 description={
-                  "I then started by working on few design exploration based on our initial requirements and specificationsAfter reviewing the initial design exploration with all stakeholders, we narrowed it to the MVP that we set out to launch.  It was a stripped down version of the fully feature version, this was done strategically so that we can measure the impact of each new added feature. of the project, while keeping in mind all our insights and feedback collected"
+                  "After reviewing the initial design exploration with all stakeholders, we narrowed it to the MVP that we set out to launch.  It was a stripped down version of the fully feature version, this was done strategically so that we can measure the impact of each new added feature."
                 }
                 className=" responsive-width-case-study"
               />
@@ -358,12 +358,6 @@ export function TheMuseJDP() {
                     Propose a set of information that we believe will
                     differentiate our job pages if we were to collect that
                     information from companies
-                  </p>
-                </li>
-                <li className="text-left">
-                  <p>
-                    The next episode icon was intuitive and was where the user
-                    expected to see it.
                   </p>
                 </li>
               </ul>

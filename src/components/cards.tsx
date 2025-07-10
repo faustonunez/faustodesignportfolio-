@@ -115,7 +115,7 @@ export function HorizontalCard({
       >
         <h6 className="w-full">{subtitle}</h6>
         <h3 className="mt-5 w-full group-hover:underline">{title}</h3>
-        <div className="flex flex-wrap gap-2 mt-2">
+        <div className="flex flex-wrap gap-2 mt-4">
           {badges.map((badge, index) => (
             <Badge key={index} text={badge} />
           ))}
