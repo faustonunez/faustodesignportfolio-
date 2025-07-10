@@ -30,10 +30,10 @@ export function Homepage() {
               <h1 className="mb-[16px] mt-[124px] w-full">Hi, I’m Fausto</h1>
               <h5 className="lg:w-[80%] w-full">
                 Thank you for stopping by! I’m a Senior Product Designer working
-                with small and large multi-disciplinary teams, leading large end
-                to end product initiatives with a holistic approach. I’m
-                currently running my own UX/UI design consultancy working with a
-                variety of startups, enterprises and agencies.
+                with small and large multi-disciplinary teams, leading large
+                end-to-end product initiatives with a holistic approach. I’m
+                currently running my own UX/UI design consultancy, working with
+                a variety of startups, enterprises, and agencies.
               </h5>
               <img
                 src={CompaniesLogoImg}
