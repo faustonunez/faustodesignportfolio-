@@ -3,6 +3,7 @@ import WarnerArchiveImg from "../assets/images/homepage/warnerarchive-img.png";
 import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
 import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
 import TheMuseJpdImg from "../assets/images/homepage/themuse-jdp.png";
+import TheMuseMayaImg from "../assets/images/homepage/themuse-maya.png";
 import CompaniesLogoImg from "../assets/images/homepage/companies-logos.png";
 import Arrow from "../assets/images/homepage/arrow-down.svg?react";
 import { Helmet } from "react-helmet-async";
@@ -64,6 +65,17 @@ export function Homepage() {
               badges={["User Research", "B2C", "UX", "UI", "Design System"]}
               circleColor="#F8F9FF"
               link="/themuse-JDP"
+            />
+            <HorizontalCard
+              image={TheMuseMayaImg}
+              subtitle="The Muse"
+              title="Rethinking Content Discovery Through AI"
+              altText="Screenshot of Buildbook construction management design"
+              className="w-full h-auto"
+              reverseOrder={false}
+              badges={["AI", "UX", "UI", "Prototyping"]}
+              circleColor="#F8F9FF"
+              link="https://www.figma.com/deck/DTPlhTWKgJky1YHkUobUY3/The-Muse---Maya-AI?node-id=17-59&viewport=-161%2C-1863%2C1&t=tpi3SA4oBlS3kkAN-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&hide-ui=1"
             />
             <HorizontalCard
               image={BuildbookImg}
