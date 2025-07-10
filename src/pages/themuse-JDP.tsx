@@ -638,7 +638,7 @@ export function TheMuseJDP() {
                 <li className="custom-li text-left">
                   <p>
                     I helped conduct several user tests and research which
-                    helped us get a better understanding of how what Job Seekers
+                    helped us get a better understanding of how Job Seekers
                     value the most when looking for jobs and gave us more
                     confidence in what we built.
                   </p>
@@ -654,8 +654,8 @@ export function TheMuseJDP() {
                 </li>
                 <li className="custom-li text-left">
                   <p>
-                    We had a JDP was much faster to build on and optimized for
-                    better SEO
+                    We had a JDP that was much faster to build on and optimized
+                    for better SEO
                   </p>
                 </li>
                 <li className="custom-li text-left">
