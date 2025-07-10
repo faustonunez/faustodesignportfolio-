@@ -83,7 +83,7 @@ export function Homepage() {
               title="New approach to construction management"
               altText="Screenshot of Buildbook construction management design"
               className="w-full h-auto"
-              reverseOrder={false}
+              reverseOrder={true}
               badges={["Mobile", "B2b", "B2C", "UX", "UI", "Design System"]}
               circleColor="#F8F9FF"
               link="/buildbook"
@@ -94,7 +94,7 @@ export function Homepage() {
               title="Rethinking Asset Management"
               altText="Screenshot of CloudEstate asset management design"
               className="w-full h-auto"
-              reverseOrder={true}
+              reverseOrder={false}
               badges={["SaaS", "FinTech", "UX", "UI", "Design System"]}
               circleColor="#F6F3F3"
               link="/cloudestate"
@@ -105,7 +105,7 @@ export function Homepage() {
               title="Designing an adaptable video player"
               altText="Screenshot of Warner Bros adaptable video player design"
               className="w-full h-auto"
-              reverseOrder={false}
+              reverseOrder={true}
               badges={["UX", "UI", "Design System"]}
               circleColor="#EDEEF5"
               link="/videoplayer"
@@ -116,7 +116,7 @@ export function Homepage() {
               title="Systemizing a video streaming experience"
               altText="Screenshot of Warner Bros video streaming system design"
               className="w-full h-auto"
-              reverseOrder={true}
+              reverseOrder={false}
               badges={["UX", "UI", "Design System"]}
               circleColor="#FBF3EE"
               link="/warner"
