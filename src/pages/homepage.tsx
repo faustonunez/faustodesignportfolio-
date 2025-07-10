@@ -17,7 +17,7 @@ export function Homepage() {
         <title>Fausto Nuñez</title>
         <meta
           name="description"
-          content="I’m a Senior Product Designer working with small and large multi-disciplinary teams, leading large end to end product initiatives with a holistic approach. I’m currently running my own UX/UI design consultancy working with a variety of startups, enterprises and agencies."
+          content="I’m a Senior Product Designer working with small and large, multi-disciplinary teams, leading large, end-to-end product initiatives with a holistic approach. I’m currently running my own UX/UI design consultancy, working with a variety of startups, enterprises, and agencies."
         />
       </Helmet>
       <div className=" flex-col justify-center">
