@@ -1,3 +1,4 @@
+// components/menu-modal.tsx
 import { NavLink, useNavigate } from "react-router-dom";
 import CloseIcon from "../assets/icon-close.svg?react";
 
@@ -6,73 +7,55 @@ interface MenuModalProps {
 }
 
 export function MenuModal({ onClose }: MenuModalProps) {
-  const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `relative ${isActive ? " text-light-text-dark" : "text-light-text-dark hover:text-light-text-dark"} no-underline`;
-
   const navigate = useNavigate();
+  const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `relative ${
+      isActive
+        ? "text-light-text-dark"
+        : "text-light-text-dark hover:text-light-text-dark"
+    } no-underline`;
 
-  const handleWorkClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
+  const handleWorkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    navigate("/#work"); // Navigate to the homepage with a hash.
-
-    // Close the modal
-    onClose();
-
-    // Use a small delay to ensure the page has navigated.
-    setTimeout(() => {
-      const workSection: HTMLElement | null = document.getElementById("Work");
-      if (workSection) {
-        // Scroll to the element with smooth behavior
-        const offset: number = 180;
-        const elementPosition: number =
-          workSection.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition: number = elementPosition - offset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    }, 100); // Adjust the delay if necessary.
+    onClose(); // close the modal first
+    navigate({ pathname: "/", hash: "#work" });
   };
 
   return (
-    <div className="w-svw h-full bg-custom p-20  z-50 top-0 backdrop-blur-md fixed  ">
+    <div className="w-svw h-full bg-custom p-20 z-50 top-0 backdrop-blur-md fixed">
       <CloseIcon
         className="fixed top-10 right-10 cursor-pointer"
         onClick={onClose}
       />
-      <ul className="flex flex-col justify-center gap-12 font-playfair items-center text-5xl   ">
+      <ul className="flex flex-col justify-center gap-12 font-playfair items-center text-5xl">
         <li>
           <a
             href="#work"
             onClick={handleWorkClick}
-            className={`nav-link-underline text-brand-secondary-100-text  dark:text-white ${getNavLinkClass({ isActive: false })}`}
+            className={`nav-link-underline text-brand-secondary-100-text dark:text-white ${getNavLinkClass({ isActive: false })}`}
           >
-            <h3>Work</h3>
+            Work
           </a>
         </li>
         <li>
           <NavLink
             to="/about"
+            onClick={onClose}
             className={({ isActive }) =>
               `${getNavLinkClass({ isActive })} nav-link-underline ${isActive ? "nav-link-active" : ""}`
             }
-            onClick={onClose}
           >
-            <h3>About</h3>
+            About
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="mailto:faustonunez01@gmail.com"
-            className={({ isActive }) =>
-              `${getNavLinkClass({ isActive })} nav-link-underline ${isActive ? "nav-link-active" : ""}`
-            }
+          <a
+            href="mailto:faustonunez01@gmail.com"
             onClick={onClose}
+            className="nav-link-underline text-brand-secondary-100-text dark:text-white"
           >
-            <h3>Contact</h3>
-          </NavLink>
+            Contact
+          </a>
         </li>
       </ul>
     </div>

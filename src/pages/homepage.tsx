@@ -51,7 +51,7 @@ export function Homepage() {
           <Arrow className="lg:absolute lg:bottom-0 lg:mb-10 animate-bounce my-10" />
         </div>
         <div
-          id="Work"
+          id="work"
           className=" lg:mt-[200px] my-[80px] flex justify-center items-center gap-x-6"
         >
           <div className="flex responsive-width flex-col gap-40 justify-center items-center">

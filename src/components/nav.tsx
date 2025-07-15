@@ -12,31 +12,10 @@ interface NavProps {
 export function Nav({ onBurgerMenuClick }: NavProps) {
   const navigate = useNavigate();
 
-  // Function to handle the "Work" link click
-  interface HandleWorkClickEvent {
-    e: React.MouseEvent<HTMLAnchorElement>;
-  }
-
-  const handleWorkClick = (e: HandleWorkClickEvent["e"]): void => {
+  const handleWorkClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    navigate("/#work"); // Navigate to the homepage with a hash.
-
-    // Use a small delay to ensure the page has navigated.
-    setTimeout(() => {
-      const workSection: HTMLElement | null = document.getElementById("Work");
-      if (workSection) {
-        // Scroll to the element with smooth behavior
-        const offset: number = 180;
-        const elementPosition: number =
-          workSection.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition: number = elementPosition - offset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    }, 100); // Adjust the delay if necessary.
+    // just change the URL — ScrollToTop will pick up the hash
+    navigate("/#work");
   };
 
   // Function to determine link active state
