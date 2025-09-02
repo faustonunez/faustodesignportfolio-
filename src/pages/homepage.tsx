@@ -18,23 +18,23 @@ export function Homepage() {
         <title>Fausto Nuñez</title>
         <meta
           name="description"
-          content="I’m a Senior Product Designer working with small and large, multi-disciplinary teams, leading large, end-to-end product initiatives with a holistic approach. I’m currently running my own UX/UI design consultancy, working with a variety of startups, enterprises, and agencies."
+          content="I’m a Senior Product Designer working with small and large, multi-disciplinary teams, leading large, end-to-end product initiatives with a holistic approach. I’m currently running my own UX/UI design studio, working with a variety of startups, enterprises, and agencies."
         />
       </Helmet>
       <div className=" flex-col justify-center">
         <div
           id="Header"
-          className="flex justify-center items-center lg:flex-row flex-col bg-brand-primary-20 lg:w-screen lg:h-screen w-[100%] h-auto"
+          className="flex justify-center items-center lg:flex-col flex-col bg-brand-primary-20 lg:w-screen lg:h-screen w-[100%] h-auto relative"
         >
-          <div className=" responsive-width-pb responsive-width h-auto flex lg:flex-row flex-col items-center lg:mt-0 md:mt-16 mt-10">
-            <div className="text-left lg:w-3/4 md:w-[90%] mr-[50px]">
+          <div className=" responsive-width-pb responsive-width h-auto flex lg:flex-row flex-col items-center  lg:mt-0 md:mt-16 mt-1 place-content-between">
+            <div className="text-left  w-3/4 mr-[50px]">
               <h1 className="mb-[16px] mt-[124px] w-full">Hi, I’m Fausto</h1>
               <h5 className="lg:w-[80%] w-full">
                 Thank you for stopping by! I’m a Senior Product Designer working
                 with small and large multi-disciplinary teams, leading large
-                end-to-end product initiatives with a holistic approach. I’m
-                currently running my own UX/UI design consultancy, working with
-                a variety of startups, enterprises, and agencies.
+                end-to-end product initiatives with a holistic approach. At the
+                moment, I’m running my own UX/UI design studio, working with a
+                variety of startups, enterprises, and agencies.
               </h5>
               <img
                 src={CompaniesLogoImg}
@@ -45,14 +45,22 @@ export function Homepage() {
             <img
               src={HeaderImg}
               alt="Hero Image"
-              className="md:w-1/5 md:h-1/5 w-1/2 h-1/2 my-[0px] mt-[100px] md:pb-0 pb-0"
+              className=" md:w-[18%] w-[20%]  my-[0px] md:mt-[100px] mt-0 md:pb-0 pb-0 object-contain lg:mb-0 mb-5"
             ></img>
           </div>
-          <Arrow className="lg:absolute lg:bottom-0 lg:mb-10 animate-bounce my-10" />
+          <Arrow
+            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 lg:mb-10 mb-10 animate-bounce md:block hidden cursor-pointer"
+            onClick={() => {
+              document
+                .getElementById("work")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          />
         </div>
         <div
           id="work"
-          className=" lg:mt-[200px] my-[80px] flex justify-center items-center gap-x-6"
+          className="lg:mt-[200px] my-[80px] flex justify-center items-center gap-x-6"
+          style={{ scrollMarginTop: "150px" }}
         >
           <div className="flex responsive-width flex-col gap-40 justify-center items-center">
             <HorizontalCard
@@ -127,4 +135,3 @@ export function Homepage() {
     </div>
   );
 }
-``;
