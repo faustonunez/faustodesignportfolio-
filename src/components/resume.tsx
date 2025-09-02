@@ -18,70 +18,6 @@ export function Resume() {
           >
             <div id="WorkExperience" className="w-full">
               <h6 className="mb-5 ">Work experience</h6>
-              <ResumeTextBlock
-                title="The Muse"
-                smallText="09/21 - Present | Senior Product Designer (Contract)"
-                description={
-                  <>
-                    Leading the design efforts on the Candidate and Growth
-                    squad, continuously improving the job seeker experience
-                    through strategic and iterative design. My responsibilities
-                    span writing UX briefs and{" "}
-                    <strong>
-                      research plans, conducting user research, designing
-                      creative solutions based on insights and data
-                    </strong>
-                    , and collaborating closely with stakeholders and engineers
-                    to implement, QA, and test designs.
-                  </>
-                }
-                showList={false}
-                listItems={[
-                  {
-                    title: "Momentoos:",
-                    text: (
-                      <>
-                        Successfully launched a freelancing and consulting
-                        business, set up a framework and business strategy by
-                        partnering and working with a variety of startups,
-                        enterprises, and agencies.
-                      </>
-                    ),
-                  },
-                  {
-                    title: "AppliedLabs:",
-                    text: (
-                      <>
-                        Supported in the design efforts for a technology-based
-                        agency in the fintech and automation sector, assisted in
-                        the conceptualization, design, and implementation of
-                        multiple SaaS products.
-                      </>
-                    ),
-                  },
-                  {
-                    title: "CloudEstate:",
-                    text: (
-                      <>
-                        Led the design for one of the first asset management
-                        apps, helping them launch a beta version of the product
-                        and set up a design system that they used to pitch
-                        potential clients and investors.
-                      </>
-                    ),
-                  },
-                  {
-                    title: "Buildbook:",
-                    text: (
-                      <>
-                        Contributed to the efforts of launching Buildbook’s
-                        first mobile app and set up a foundational design
-                        system.
-                      </>
-                    ),
-                  },
-                ]}
-              />
 
               {/* Momentoos */}
               <ResumeTextBlock
@@ -141,6 +77,57 @@ export function Resume() {
                         Contributed to the efforts of launching Buildbook’s
                         first mobile app and set up a foundational design
                         system.
+                      </>
+                    ),
+                  },
+                ]}
+              />
+
+              <ResumeTextBlock
+                title="The Muse"
+                smallText="09/21 - 06/25 | Senior Product Designer (Contract)"
+                description={
+                  <>
+                    Leading design efforts on the Candidate and Growth squad,
+                    which serves 5 million monthly active job seekers,
+                    continuously improving the job seeker experience through
+                    strategic and iterative design.
+                  </>
+                }
+                showList={true}
+                listItems={[
+                  {
+                    title: "",
+                    text: (
+                      <>
+                        Redesigned and optimized The Muse’s Job Details Page,
+                        contributing to the most successful year in{" "}
+                        <strong>
+                          the company’s history for job applications—with a 40%
+                          increase post-launch.
+                        </strong>
+                      </>
+                    ),
+                  },
+                  {
+                    title: "",
+                    text: (
+                      <>
+                        Directed and{" "}
+                        <strong>conducted over 66 user interviews </strong>{" "}
+                        annually, generating strategic insights that informed
+                        product development and improved the user experience.
+                      </>
+                    ),
+                  },
+                  {
+                    title: "",
+                    text: (
+                      <>
+                        Led the rebranding of all core pages on The Muse by
+                        collaborating cross-functionally with the Marketing and
+                        Product teams, resulting in a more modern, accessible,
+                        and intuitive user experience.
                       </>
                     ),
                   },
