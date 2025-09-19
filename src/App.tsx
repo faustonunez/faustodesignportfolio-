@@ -22,6 +22,7 @@ import { Warner } from "./pages/warner";
 import { Buildbook } from "./pages/buildbook";
 import { CloudEstate } from "./pages/cloudestate";
 import { TheMuseJDP } from "./pages/themuse-JDP";
+import { TheMuseMaya } from "./pages/themuse-Maya";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function AppContent() {
     "/cloudestate",
     "/buildbook",
     "/themuse-JDP",
+    "/themuse-Maya",
   ];
   const isDarkMode = darkRoutes.includes(location.pathname);
 
@@ -62,6 +64,7 @@ function AppContent() {
         <Route path="/buildbook" element={<Buildbook />} />
         <Route path="/cloudestate" element={<CloudEstate />} />
         <Route path="/themuse-JDP" element={<TheMuseJDP />} />
+        <Route path="/themuse-Maya" element={<TheMuseMaya />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 

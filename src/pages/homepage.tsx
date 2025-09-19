@@ -83,7 +83,7 @@ export function Homepage() {
               reverseOrder={false}
               badges={["AI", "UX", "UI", "Prototyping"]}
               circleColor="#F8F9FF"
-              link="https://www.figma.com/deck/DTPlhTWKgJky1YHkUobUY3/The-Muse---Maya-AI?node-id=17-59&viewport=-161%2C-1863%2C1&t=tpi3SA4oBlS3kkAN-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&hide-ui=1"
+              link="/themuse-Maya"
             />
             <HorizontalCard
               image={BuildbookImg}
