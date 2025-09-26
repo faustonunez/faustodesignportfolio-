@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import { ScrollToTop } from "./components/scrolltotop";
+import { GoogleAnalytics } from "./components/GoogleAnalytics"; // Add this import
 
 // Component Imports
 import { Nav } from "./components/nav";
@@ -40,6 +41,9 @@ function AppContent() {
   const toggleMenuModal = () => setIsMenuModalOpen(!isMenuModalOpen);
   const closeMenuModal = () => setIsMenuModalOpen(false);
 
+  // Add your Google Analytics tracking ID here
+  const GA_TRACKING_ID = "G-M725NZBLQD"; // Replace with your actual tracking ID
+
   // list all the routes that should trigger dark mode
   const darkRoutes = [
     "/videoplayer",
@@ -53,6 +57,7 @@ function AppContent() {
 
   return (
     <div className={`${isDarkMode ? "dark" : ""} bg-brand-greys-0`}>
+      <GoogleAnalytics trackingId={GA_TRACKING_ID} />
       <Nav onBurgerMenuClick={toggleMenuModal} />
       {isMenuModalOpen && <MenuModal onClose={closeMenuModal} />}
 
