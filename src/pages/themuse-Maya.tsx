@@ -3,14 +3,21 @@ import MayaExploration1 from "../assets/images/maya/maya-competitive-research-1.
 import MayaExploration2 from "../assets/images/maya/maya-competitive-research-2.png";
 import MayaApproach from "../assets/images/maya/maya-approach.png";
 import MayaBrandExploration from "../assets/images/maya/maya-brand-exploration.png";
-import MayaChatBotInterface1 from "../assets/images/maya/maya-chatbot-interface-1.png";
-import MayaChatBotInterface2 from "../assets/images/maya/maya-chatbot-interface-2.png";
-import MayaChatBotInterface3 from "../assets/images/maya/maya-chatbot-interface-3.png";
+
+import MayaScreen01 from "../assets/images/maya/maya-screen-01.png";
+import MayaScreen02 from "../assets/images/maya/maya-screen-02.png";
+import MayaScreen03 from "../assets/images/maya/maya-screen-03.png";
+import MayaScreen04 from "../assets/images/maya/maya-screen-04.png";
+import MayaScreen05 from "../assets/images/maya/maya-screen-05.png";
+import MayaScreen06 from "../assets/images/maya/maya-screen-06.png";
+
 import MayaPromotion1 from "../assets/images/maya/Maya-Ads-1.png";
 import MayaPromotion2 from "../assets/images/maya/Maya-Ads-2.png";
 
 import MayaAdvicePopup from "../assets/images/maya/maya-advice-popup.mp4";
+import MayaPrototype from "../assets/images/maya/maya-prototype.mp4";
 import { VideoOnView } from "@/components/videoplayer.tsx";
+import { ImageModal } from "@/components/ImageModal";
 
 import { Helmet } from "react-helmet-async";
 
@@ -169,7 +176,7 @@ export function TheMuseMaya() {
                   <img
                     src={MayaBrandExploration}
                     alt="Sketches Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
+                    className=" xl:w-[70%] w-[90%] h-auto rounded-[16px]"
                   ></img>
                 </div>
               </div>
@@ -192,23 +199,96 @@ export function TheMuseMaya() {
                 className=" responsive-width-case-study"
               />
               <div className="flex  flex-col justify-between items-center space-y-10   ">
-                <div className="flex  flex-col justify-between items-center space-y-3 gap-2  ">
-                  <img
-                    src={MayaChatBotInterface1}
-                    alt="Sketches Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
-                  ></img>
-                  <img
-                    src={MayaChatBotInterface2}
-                    alt="Sketches Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
-                  ></img>
-                  <img
-                    src={MayaChatBotInterface3}
-                    alt="Sketches Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
-                  ></img>
+                <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] px-4 md:px-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+                    <div className="flex justify-center">
+                      <ImageModal
+                        src={MayaScreen01}
+                        alt="Maya Screen 01"
+                        className="w-full"
+                      >
+                        <img
+                          src={MayaScreen01}
+                          alt="Maya Screen 01"
+                          className="w-full h-auto shadow-lg"
+                        />
+                      </ImageModal>
+                    </div>
+                    <div className="flex justify-center">
+                      <ImageModal
+                        src={MayaScreen02}
+                        alt="Maya Screen 02"
+                        className="w-full"
+                      >
+                        <img
+                          src={MayaScreen02}
+                          alt="Maya Screen 02"
+                          className="w-full h-auto shadow-lg"
+                        />
+                      </ImageModal>
+                    </div>
+                    <div className="flex justify-center">
+                      <ImageModal
+                        src={MayaScreen03}
+                        alt="Maya Screen 03"
+                        className="w-full"
+                      >
+                        <img
+                          src={MayaScreen03}
+                          alt="Maya Screen 03"
+                          className="w-full h-auto shadow-lg"
+                        />
+                      </ImageModal>
+                    </div>
+                    <div className="flex justify-center">
+                      <ImageModal
+                        src={MayaScreen04}
+                        alt="Maya Screen 04"
+                        className="w-full"
+                      >
+                        <img
+                          src={MayaScreen04}
+                          alt="Maya Screen 04"
+                          className="w-full h-auto shadow-lg"
+                        />
+                      </ImageModal>
+                    </div>
+                    <div className="flex justify-center">
+                      <ImageModal
+                        src={MayaScreen05}
+                        alt="Maya Screen 05"
+                        className="w-full"
+                      >
+                        <img
+                          src={MayaScreen05}
+                          alt="Maya Screen 05"
+                          className="w-full h-auto shadow-lg"
+                        />
+                      </ImageModal>
+                    </div>
+                    <div className="flex justify-center">
+                      <ImageModal
+                        src={MayaScreen06}
+                        alt="Maya Screen 06"
+                        className="w-full"
+                      >
+                        <img
+                          src={MayaScreen06}
+                          alt="Maya Screen 06"
+                          className="w-full h-auto shadow-lg"
+                        />
+                      </ImageModal>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div className="p-2 rounded-[16px] bg-[#EDEEF5] xl:w-[70%] w-[90%] h-auto mt-20">
+                <VideoOnView
+                  src={MayaPrototype}
+                  className="rounded-[8px]"
+                  // optionally override threshold:
+                  threshold={0.5}
+                />
               </div>
             </div>
             <div />
@@ -233,12 +313,12 @@ export function TheMuseMaya() {
                   <img
                     src={MayaPromotion1}
                     alt="Sketches Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
+                    className=" xl:w-[70%] w-[90%] h-auto shadow-lg mb-16"
                   ></img>
                   <img
                     src={MayaPromotion2}
                     alt="Sketches Image"
-                    className=" xl:w-[70%] w-[90%] h-auto "
+                    className=" xl:w-[70%] w-[90%] h-auto shadow-lg"
                   ></img>
                 </div>
               </div>
