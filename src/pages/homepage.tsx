@@ -4,11 +4,10 @@ import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
 import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
 import TheMuseJpdImg from "../assets/images/homepage/themuse-jdp.png";
 import TheMuseMayaImg from "../assets/images/homepage/themuse-maya.png";
-import CompaniesLogoImg from "../assets/images/homepage/companies-logos.png";
 import Arrow from "../assets/images/homepage/arrow-down.svg?react";
 import { Helmet } from "react-helmet-async";
 
-import HeaderImg from "../assets/images/homepage/hero-image-2.png";
+import HeaderImg3 from "../assets/images/homepage/hero-image-3.png";
 import { HorizontalCard } from "../components/cards";
 
 export function Homepage() {
@@ -24,32 +23,46 @@ export function Homepage() {
       <div className=" flex-col justify-center">
         <div
           id="Header"
-          className="flex justify-center items-center lg:flex-col flex-col bg-brand-primary-20 lg:w-screen lg:h-screen w-[100%] h-auto relative"
+          className="flex justify-top items-center lg:flex-col flex-col bg-brand-primary-20 lg:w-screen lg:h-screen w-[100%] h-auto relative"
         >
-          <div className=" responsive-width-pb responsive-width h-auto flex lg:flex-row flex-col items-center  lg:mt-0 md:mt-16 mt-1 place-content-between">
-            <div className="text-left  w-3/4 mr-[50px]">
-              <h1 className="mb-[16px] mt-[124px] w-full">Hi, I’m Faustoo</h1>
-              <h5 className="lg:w-[80%] w-full">
-                Thank you for stopping by! I’m a Senior Product Designer working
-                with small and large multi-disciplinary teams, leading large
-                end-to-end product initiatives with a holistic approach. At the
-                moment, I’m running my own UX/UI design studio, working with a
-                variety of startups, enterprises, and agencies.
-              </h5>
-              <img
-                src={CompaniesLogoImg}
-                alt="Logos of companies Fausto has worked with"
-                className="mt-5 md:pb-0 pb-6 lg:w-[80%] w-[100%] h-auto"
-              ></img>
+          <div className="responsive-width mt-[100px] h-full flex flex-col">
+            <h1
+              className="  w-full font-black leading-tight"
+              style={{
+                fontSize: "clamp(3.75rem, 9vw, 10rem)",
+              }}
+            >
+              Lead. Craft. Play.
+            </h1>
+            <div className="flex flex-col lg:flex-row items-center justify-center lg:-mt-24 mt-8 w-full flex-1 gap-8">
+              <div className="text-left lg:w-1/2 w-full">
+                <h5 className="w-full">
+                  Hi, I’m Fausto, a multidisciplinary product designer with over
+                  10 years of experience turning ideas into meaningful products.
+                  I run my own UX/UI studio where I help brands bring bold ideas
+                  to life.
+                </h5>
+                <br />
+                <h5 className="w-full">
+                  {" "}
+                  I’m a <strong>
+                    builder at heart, endlessly curious,
+                  </strong>{" "}
+                  and love turning complex problems into simple, beautiful
+                  experiences.
+                </h5>
+              </div>
+              <div className="lg:w-1/2 w-full flex justify-center  lg:justify-end">
+                <img
+                  src={HeaderImg3}
+                  alt="Hero Image"
+                  className=" w-[30%] md:w-[30%] lg:w-[34%] xlg:w-[30%]  max-w-md object-contain lg:mb-0 mb-4"
+                ></img>
+              </div>
             </div>
-            <img
-              src={HeaderImg}
-              alt="Hero Image"
-              className=" md:w-[18%] w-[20%]  my-[0px] md:mt-[100px] mt-0 md:pb-0 pb-0 object-contain lg:mb-0 mb-5"
-            ></img>
           </div>
           <Arrow
-            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 lg:mb-10 mb-10 animate-bounce md:block hidden cursor-pointer"
+            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 lg:mb-10 mb-10 animate-bounce lg:block hidden cursor-pointer"
             onClick={() => {
               document
                 .getElementById("work")
