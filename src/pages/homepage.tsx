@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 
 import { HorizontalCard } from "../components/cards";
 
-import { HeroV0 } from "../components/Hero-v0";
+import { Hero } from "@/components/Hero";
 
 export function Homepage() {
   return (
@@ -21,7 +21,7 @@ export function Homepage() {
         />
       </Helmet>
       <div className=" flex-col justify-center">
-        <HeroV0 />
+        <Hero />
         <div
           id="work"
           className="lg:mt-[200px] my-[80px] flex justify-center items-center gap-x-6"
