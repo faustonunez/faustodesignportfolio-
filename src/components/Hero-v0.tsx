@@ -1,7 +1,7 @@
 import HeaderImg3 from "../assets/images/homepage/hero-image-3.png";
 import Arrow from "../assets/images/homepage/arrow-down.svg?react";
 
-export function Hero() {
+export function HeroV0() {
   return (
     <div
       id="Header"

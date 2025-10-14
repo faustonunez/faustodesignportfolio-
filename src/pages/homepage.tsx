@@ -7,7 +7,8 @@ import TheMuseMayaImg from "../assets/images/homepage/themuse-maya.png";
 import { Helmet } from "react-helmet-async";
 
 import { HorizontalCard } from "../components/cards";
-import { Hero } from "../components/Hero";
+
+import { HeroV0 } from "../components/Hero-v0";
 
 export function Homepage() {
   return (
@@ -20,7 +21,7 @@ export function Homepage() {
         />
       </Helmet>
       <div className=" flex-col justify-center">
-        <Hero />
+        <HeroV0 />
         <div
           id="work"
           className="lg:mt-[200px] my-[80px] flex justify-center items-center gap-x-6"
