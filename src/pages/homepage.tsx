@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 
 import { HorizontalCard } from "../components/cards";
 
-import { Hero } from "@/components/Hero";
+import { Hero } from "../components/Hero";
 
 export function Homepage() {
   return (

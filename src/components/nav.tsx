@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/fausto-logo.svg?react";
 import BurgerMenu from "../assets/icon-burger.svg?react";
@@ -11,6 +13,34 @@ interface NavProps {
 
 export function Nav({ onBurgerMenuClick }: NavProps) {
   const navigate = useNavigate();
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!navRef.current) return;
+
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    if (prefersReducedMotion) {
+      // No animation for reduced motion - nav is visible immediately
+      return;
+    }
+
+    // Set initial state - slide down from top (no opacity change)
+    gsap.set(navRef.current, {
+      y: -100,
+    });
+
+    // Animate in from top - starts immediately, before Hero animations
+    gsap.to(navRef.current, {
+      y: 0,
+      duration: 0.8,
+      ease: "cubic-bezier(0.22, 1, 0.36, 1)",
+      delay: 0.1, // Start slightly before Hero animations
+    });
+  }, []);
 
   const handleWorkClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -27,7 +57,10 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
     } no-underline`;
 
   return (
-    <div className="w-full bg-brand-primary-20 dark:bg-[#1b1d27] flex justify-center py-10 fixed top-0 z-50">
+    <div
+      ref={navRef}
+      className="w-full bg-brand-primary-20 dark:bg-[#1b1d27] flex justify-center py-10 fixed top-0 z-50"
+    >
       <div className="responsive-width flex relative justify-between items-center">
         <div id="SocialMedia" className="flex justify-center">
           <a
