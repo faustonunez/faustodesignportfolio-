@@ -223,9 +223,10 @@ export function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-center lg:-mt-24 mt-8 w-full flex-1 gap-8">
           <div ref={textBlockRef} className="text-left lg:w-1/2 w-full">
             <h5 className="w-full">
-              Hi, I'm Fausto, a multidisciplinary product designer with over 10
-              years of experience turning ideas into meaningful products. I run
-              my own UX/UI studio where I help brands bring bold ideas to life.
+              Hi, I'm Fausto, a multidisciplinary senior product designer with
+              over 10 years of experience turning ideas into meaningful
+              products. I run my own UX/UI studio where I help brands bring bold
+              ideas to life.
             </h5>
             <br />
             <h5 className="w-full">
