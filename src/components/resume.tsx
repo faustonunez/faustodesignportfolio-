@@ -261,14 +261,22 @@ export function Resume() {
           <div id="Skills" className=" md:w-[30%] w-full">
             <h6 className="mb-5 ">Skills</h6>
             <div className="mb-10">
+              <div className="mb-10">
+                <h5>Coding</h5>
+                <p>
+                  HTML, CSS, Javascript, React JS, Git, GitHub, Vercel, VSCode,
+                  Cursor AI, Lovable, Figma Make
+                </p>
+              </div>
               <h5>Tools</h5>
               <p>
-                Adobe Creative Suite, Figma, Sketch, Invision, Abstract, Flinto,
+                Adobe Creative Suite, Figma, Sketch, Abstract, Flinto,
                 Procreate, Principle, Zeplin, Framer X, Lottie, Asana, Jira,
                 Trello, Miro, Whimsical, Airtable, Webflow, Google Analytics,
-                Optimizely, Google Suite, HTML, CSS, Javascript
+                Optimizely, Google Suite
               </p>
             </div>
+
             <div className="mb-10">
               <h5>Visual</h5>
               <p>
