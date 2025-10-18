@@ -24,6 +24,7 @@ import { Buildbook } from "./pages/buildbook";
 import { CloudEstate } from "./pages/cloudestate";
 import { TheMuseJDP } from "./pages/themuse-JDP";
 import { TheMuseMaya } from "./pages/themuse-Maya";
+import { TheLab } from "./pages/the-lab";
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function AppContent() {
         <Route path="/themuse-JDP" element={<TheMuseJDP />} />
         <Route path="/themuse-Maya" element={<TheMuseMaya />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/the-lab" element={<TheLab />} />
       </Routes>
 
       <Footer />
