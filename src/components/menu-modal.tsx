@@ -39,6 +39,17 @@ export function MenuModal({ onClose }: MenuModalProps) {
         </li>
         <li>
           <NavLink
+            to="/sandbox"
+            onClick={onClose}
+            className={({ isActive }) =>
+              `${getNavLinkClass({ isActive })} nav-link-underline ${isActive ? "nav-link-active" : ""}`
+            }
+          >
+            Sandbox
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/about"
             onClick={onClose}
             className={({ isActive }) =>
