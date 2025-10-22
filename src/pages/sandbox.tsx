@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ProjectCard } from "../components/ProjectCard";
 import TheLabColorSystemGenerator from "../assets/images/the-lab/the-lab-color-system-generator.png";
 import TheLabEventParser from "../assets/images/the-lab/the-lab-event-parser.png";
+import TheLabEventParserVideo from "../assets/images/the-lab/event-parser-video.mp4";
 import TheLabFaustoPhotography from "../assets/images/the-lab/the-lab-fausto-photography.png";
 import TheLabDonutModeling from "../assets/images/the-lab/the-lab-donut-modeling.png";
 import TheLabDesignersHub from "../assets/images/the-lab/the-lab-designers-hub.png";
@@ -126,9 +127,11 @@ export function Sandbox() {
                */}
               <ProjectCard
                 image={TheLabEventParser}
+                video={TheLabEventParserVideo}
                 title="AI Event Image Parser "
                 description="Juno is a program that utilizes OpenAI's GPT -4 Vision to parse through an image event, extracting its information, which is then generated into a calendar link. I designed it and vibe-coded using Figma Make."
                 link="https://perm-slaw-92786319.figma.site/"
+                videoOnly={true}
               />
               <ProjectCard
                 image={TheLabFaustoPhotography}
