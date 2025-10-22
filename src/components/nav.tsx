@@ -98,6 +98,14 @@ export function Nav({ onBurgerMenuClick }: NavProps) {
               </a>
             </li>
             <li>
+              <a
+                href="/sandbox"
+                className={`nav-link-underline text-brand-secondary-100-text  dark:text-white ${getNavLinkClass({ isActive: false })}`}
+              >
+                Sandbox
+              </a>
+            </li>
+            <li>
               <NavLink
                 to="/about"
                 className={({ isActive }) =>

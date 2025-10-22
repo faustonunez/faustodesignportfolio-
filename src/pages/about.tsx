@@ -105,7 +105,7 @@ export function About() {
                 My journey started as a graphic designer working in a variety of
                 projects, all the way from print to web. I quickly fell in love
                 with designing digital products and making people’s lives a
-                little easier, in the past 10 years I’ve been working with small
+                little easier, in the past 15 years I’ve been working with small
                 and large multi-disciplinary teams, leading large end-to-end
                 product initiatives with a holistic approach. Advocate for the
                 user with a data-informed and research-guided mindset, flexible
