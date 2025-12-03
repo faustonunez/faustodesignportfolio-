@@ -18,10 +18,8 @@ import JdpPerksBenefits from "../assets/images/jdp/jdp-perks-and-benefits-design
 import JdpVideo from "../assets/images/jdp/jdp-video.png";
 
 import JdpQuickApply from "../assets/images/jdp/jpd-quick-apply.mp4";
-import { VideoOnView } from "@/components/videoplayer.tsx";
 
 import JobAlert from "../assets/images/jdp/jdp-job-alert.png";
-import JobAlertComponent from "../assets/images/jdp/jdp-email-alert-components.jpg";
 import JobAlertFlow from "../assets/images/jdp/JDP-email-alert-flow.png";
 
 import { Helmet } from "react-helmet-async";
@@ -535,11 +533,12 @@ export function TheMuseJDP() {
                     <p>Job Alerts User Journey</p>
                   </div>
                   <div className="p-2 rounded-[16px] bg-[#EDEEF5] xl:w-[70%] w-[90%] h-auto flex flex-col items-center">
-                    <img
+                    <FigmaEmbed url="https://embed.figma.com/design/urfbIGcvUMATl41EO05Oar/JDP-Website-Frames?node-id=838-2335&embed-host=share" />
+                    {/*img
                       src={JobAlertComponent}
                       alt="Sketches Image"
                       className=" rounded-[8px]  "
-                    />
+                    />*/}
                     <p>Components Sheet</p>
                   </div>
                   <div className="p-2 rounded-[16px] bg-[#EDEEF5] xl:w-[70%] w-[90%] h-auto">
@@ -576,12 +575,15 @@ export function TheMuseJDP() {
               <div className="flex  flex-col justify-between items-center space-y-10 ">
                 <div className="flex  flex-col justify-between items-center space-y-3 ">
                   <div className="p-2 rounded-[16px] bg-[#EDEEF5] xl:w-[70%] w-[90%] h-auto">
-                    <VideoOnView
+                    <video
+                      className="rounded-[8px] w-full"
                       src={JdpQuickApply}
-                      className="rounded-[8px]"
-                      // optionally override threshold:
-                      threshold={0.5}
-                    />
+                      controls
+                      preload="metadata"
+                      style={{ backgroundColor: "#000" }}
+                    >
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>
@@ -669,7 +671,11 @@ export function TheMuseJDP() {
                   <p>
                     By introducing Job Alerts and Quick Apply, we could now
                     engage users better to continue providing them with more
-                    value long after they come to The Muse.
+                    value long after they come to The Muse.{" "}
+                    <strong>
+                      For Job Apply with saw 2x increase in applications per
+                      Applicant.
+                    </strong>
                   </p>
                 </li>
               </ol>
