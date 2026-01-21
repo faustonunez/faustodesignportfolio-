@@ -386,6 +386,11 @@ export function TheMuseMaya() {
                   </>
                 </li>
                 <li className="custom-li text-left">
+                  <>
+                  We saw a <strong>25% content engagement increase</strong> in overall career content.
+                  </>
+                </li>
+                <li className="custom-li text-left">
                   <p>
                     Beyond content delivery, Maya also offered valuable insight
                     into emerging user needs, helping our editorial team
