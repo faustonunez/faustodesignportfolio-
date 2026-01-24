@@ -7,12 +7,13 @@ import { LabelDescription } from "@/components/main-text";
 import { Subtitle } from "@/components/main-text";
 
 import { HeaderMain } from "@/components/HeaderMain";
+import { VideoPlayerComp } from "@/components/videoplayercomp";
 
 // Placeholder images - these will need to be replaced with actual assets
-import TheMuseSearchHeroImg from "../assets/images/jdp/jpd-hero-image.png";
-import OldSearchDesignImg from "../assets/images/jdp/jdp-before-design.png";
-import NewSearchMockupImg from "../assets/images/jdp/jdp-after-design.png";
-import ResponsiveSearchImg from "../assets/images/jdp/jdp-perks-and-benefits-design.png";
+import TheMuseSearchHeroImg from "../assets/images/search/themuse-search-hero.png";
+import OldSearchDesignImg from "../assets/images/search/themuse-search-page-old-design.png";
+import SearchVideo from "../assets/images/search/themuse-search-page-video-reduce.mp4";
+import ResponsiveSearchImg from "../assets/images/search/themuse-search-responsive.png";
 
 export function TheMuseSearch() {
   return (
@@ -103,13 +104,13 @@ export function TheMuseSearch() {
               }
               className="w-full text-center"
             />
-            <div className="flex justify-center items-center">
-              {/* Placeholder for video/mockup - using image for now */}
-              <img
-                src={NewSearchMockupImg}
-                alt="New Search Design Mockup"
-                className="w-full max-w-[996px] h-auto shadow-[0px_4px_50px_0px_rgba(0,0,0,0.15)]"
-              />
+            <div className="flex justify-center items-center w-full">
+              <div className="w-full max-w-[996px] shadow-[0px_4px_50px_0px_rgba(0,0,0,0.15)]">
+                <VideoPlayerComp
+                  videoSrc={SearchVideo}
+                  className="w-full h-auto "
+                />
+              </div>
             </div>
           </div>
         </div>
