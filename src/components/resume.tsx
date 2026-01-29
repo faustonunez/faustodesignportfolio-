@@ -22,40 +22,20 @@ export function Resume() {
               {/* Momentoos */}
               <ResumeTextBlock
                 title="Momentoos"
-                smallText="05/18 - Present | Owner and Principal Designer"
+                smallText="12/17 - Present | Founder and Principal Designer"
                 description={
                   <>
-                    Owner and principal designer for a design studio focusing on
-                    product strategy, <strong>UX</strong>, and{" "}
-                    <strong>UI design</strong> for web and mobile. Responsible
-                    for day-to-day operations, project scoping, creating
-                    <strong> design strategies</strong> and{" "}
-                    <strong>user research</strong> plans, executing{" "}
-                    <strong>designs</strong>,<strong> presenting</strong> to
-                    clients, and <strong>testing</strong> design solutions.
+                    Founder and principal product designer for design studio focusing on product strategy and UX/UI. Led selective product <strong> design engagements for 12+ companies </strong> across marketplace, e-commerce, fintech, and construction tech, working on both early-stage initiatives and established platforms. Delivered foundational design systems, user research, and conversion-focused improvements that enabled clients to launch, fundraise, and scale.
                   </>
                 }
                 showList={true}
                 listItems={[
+                  
                   {
-                    title: "Momentoos:",
+                    title: "AppliedLabs.io:",
                     text: (
                       <>
-                        Successfully launched a freelancing and consulting
-                        business, set up a framework and business strategy by
-                        partnering and working with a variety of startups,
-                        enterprises, and agencies.
-                      </>
-                    ),
-                  },
-                  {
-                    title: "AppliedLabs:",
-                    text: (
-                      <>
-                        Supported in the design efforts for a technology-based
-                        agency in the fintech and automation sector, assisted in
-                        the conceptualization, design, and implementation of
-                        multiple SaaS products.
+                        A technology-based agency, where I led the conceptualization and design of multiple SaaS and eCommerce products.
                       </>
                     ),
                   },
@@ -63,20 +43,15 @@ export function Resume() {
                     title: "CloudEstate:",
                     text: (
                       <>
-                        Led the design for one of the first asset management
-                        apps, helping them launch a beta version of the product
-                        and set up a design system that they used to pitch
-                        potential clients and investors.
+                       Led design for one of the first asset management applications, launching a beta MVP and creating a design system used for investor demos and client pitches.
                       </>
                     ),
                   },
                   {
-                    title: "Buildbook:",
+                    title: "Buildbook.io:",
                     text: (
                       <>
-                        Contributed to the efforts of launching Buildbook’s
-                        first mobile app and set up a foundational design
-                        system.
+                        Advanced the mobile native app visual language and expanded on the various Buildbook’s user flows. Established a foundational design system for their first mobile app launch.
                       </>
                     ),
                   },
@@ -88,10 +63,7 @@ export function Resume() {
                 smallText="09/21 - 06/25 | Senior Product Designer (Contract)"
                 description={
                   <>
-                    Leading design efforts on the Candidate and Growth squad,
-                    which serves 5 million monthly active job seekers,
-                    continuously improving the job seeker experience through
-                    strategic and iterative design.
+                   Led design efforts on the Candidate and Growth squads, for The Muse’s B2C and B2B audience  (5M+ jobseekers, 1,000 employers). Focusing on continuously improving the job seeker experience for growth, activation and retention. <strong>Spearheaded 66+ user interviews in one year</strong> that helped inform roadmap and product strategy direction for multiple key projects. 
                   </>
                 }
                 showList={true}
@@ -100,12 +72,7 @@ export function Resume() {
                     title: "",
                     text: (
                       <>
-                        Redesigned and optimized The Muse’s Job Details Page,
-                        contributing to the most successful year in{" "}
-                        <strong>
-                          the company’s history for job applications—with a 40%
-                          increase post-launch.
-                        </strong>
+                        Led design for Maya, an AI-powered career coach driving a 25% increase in content engagement.
                       </>
                     ),
                   },
@@ -113,10 +80,7 @@ export function Resume() {
                     title: "",
                     text: (
                       <>
-                        Directed and{" "}
-                        <strong>conducted over 66 user interviews </strong>{" "}
-                        annually, generating strategic insights that informed
-                        product development and improved the user experience.
+                       Led the Search Page redesign, reducing time-to-application by 40% and driving a 150% increase in successful job applications
                       </>
                     ),
                   },
@@ -124,10 +88,7 @@ export function Resume() {
                     title: "",
                     text: (
                       <>
-                        Led the rebranding of all core pages on The Muse by
-                        collaborating cross-functionally with the Marketing and
-                        Product teams, resulting in a more modern, accessible,
-                        and intuitive user experience.
+                        Redesigned and optimized the Job Details Page, contributing to the most successful year in company history for job applications, with a 40% increase post-launch.
                       </>
                     ),
                   },
@@ -290,7 +251,7 @@ export function Resume() {
               <h5>Research</h5>
               <p>
                 Heuristic Evaluation, Product Design Thinking, Competitive, Lean
-                UX, Design Springs, User Interviews, Contextual Inquiry, Survey
+                UX, Design Sprints, User Interviews, Contextual Inquiry, Survey
                 Design, Focus Groups, Participatory Design, Data Analysis:
                 Quantitative & Qualitative, Journey Mapping, Card Sorting,
                 Usability Testing, A/B Testing

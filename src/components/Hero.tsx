@@ -223,14 +223,18 @@ export function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-center lg:-mt-24 mt-8 w-full flex-1 gap-8">
           <div ref={textBlockRef} className="text-left lg:w-1/2 w-full">
             <h5 className="w-full">
-            Hi, I'm Fausto, a multidisciplinary senior product designer with 15 years of experience turning ideas into meaningful products. I've partnered with startups, enterprises, and agencies to design and launch scalable digital products.
+            I'm Fausto, a Senior Product Designer with 15+ years of experience.
               
             </h5>
             <br />
             <h5 className="w-full">
               {" "}
-              I'm a <strong>builder at heart, endlessly curious,</strong> and
-              love turning complex problems into simple, beautiful experiences.
+              I help teams design and scale marketplace and SaaS products. I blend  strategy, research, and craft to drive growth and launch 0–1 experiences.
+            </h5>
+            <br />
+            <h5 className="w-full">
+              {" "}
+              Currently at Momentoos, previously at The Muse and Warner Bros Digital Labs.
             </h5>
           </div>
           <div className="lg:w-1/2 w-full flex justify-center  lg:justify-end">
