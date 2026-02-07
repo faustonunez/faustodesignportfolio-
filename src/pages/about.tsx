@@ -17,7 +17,7 @@ export function About() {
 
     // Check for reduced motion preference
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     if (prefersReducedMotion) {
@@ -67,7 +67,7 @@ export function About() {
           duration: 0.3,
           ease: "cubic-bezier(0.22, 1, 0.36, 1)",
         },
-        "-=0.1"
+        "-=0.1",
       )
 
       // Image - slides in from right, starts 300ms after text begins
@@ -80,7 +80,7 @@ export function About() {
           duration: 0.5,
           ease: "power2.out",
         },
-        "-=0.2"
+        "-=0.2",
       );
   }, []);
 
@@ -102,32 +102,34 @@ export function About() {
             <h2 className="mb-[16px] mt-[124px] w-full">About Me</h2>
             <div className="w-full prose prose-[54px]">
               <h5 className=" mb-6 w-auto">
-                My journey started as a graphic designer working in a variety of
-                projects, all the way from print to web. I quickly fell in love
-                with designing digital products and making people’s lives a
-                little easier, in the past 15 years I’ve been working with small
-                and large multi-disciplinary teams, leading large end-to-end
-                product initiatives with a holistic approach. Advocate for the
-                user with a data-informed and research-guided mindset, flexible
-                and adaptable, team player, and passionate for designing
-                inclusive, usable, useful, and beautiful products.{" "}
+                Hi, I’m Fausto and I'm based in NYC. I've been in product design
+                for the last 15 years. I consider myself a creative at heart.
+                Ever since I was a kid, art and design have been a fundamental
+                part of me and one of the lenses through which I see life.
               </h5>
               <h5 className=" mb-6">
-                At the moment, I’m running my own UX/UI design studio, working
-                with a variety of startups, enterprises, and agencies.
+                I specialize in Marketplace and SaaS with a focus on consumer
+                growth and 0→1 products. More recently I've been diving into
+                AI-Powered products.
               </h5>
               <h5 className=" mb-6">
-                If you don’t find me in my computer designing, you’ll find me
-                around NYC with friends{" "}
+                I'm currently working at my own design studio Momentoos,
+                previously at The Muse and Warner Bros. Digital Labs.
+              </h5>
+              <h5 className=" mb-6">
+                When I'm not at my desk, I love taking my Nikon F3 film camera
+                or Fuji XT3 to{" "}
                 <a
-                  href="https://www.instagram.com/faustonunez/"
+                  href="https://faustophotography.com/#/place/newyork"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" underline"
+                  className="underline hover:no-underline"
                 >
-                  taking photographs of the city or traveling somewhere in the
-                  world.
+                  {" "}
+                  photograph the ordinary but profound moments of every day in
+                  NYC
                 </a>
+                . I'm also an avid traveler and salsa dancer.
               </h5>
             </div>
           </div>

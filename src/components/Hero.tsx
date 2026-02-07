@@ -25,7 +25,7 @@ export function Hero() {
 
     // Check for reduced motion preference
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     if (prefersReducedMotion) {
@@ -40,7 +40,7 @@ export function Hero() {
         ],
         {
           opacity: 0,
-        }
+        },
       );
       gsap.to(
         [
@@ -54,7 +54,7 @@ export function Hero() {
           opacity: 1,
           duration: 0.3,
           ease: "power2.out",
-        }
+        },
       );
       return;
     }
@@ -115,7 +115,7 @@ export function Hero() {
           duration: 0.3,
           ease: "cubic-bezier(0.22, 1, 0.36, 1)",
         },
-        "-=0.1"
+        "-=0.1",
       )
 
       // Craft - rolls down from above, passes baseline, settles (60ms stagger)
@@ -128,7 +128,7 @@ export function Hero() {
           duration: 0.4,
           ease: "power2.out",
         },
-        "-=0.54"
+        "-=0.54",
       ) // 60ms stagger
       .to(
         craftRef.current,
@@ -137,7 +137,7 @@ export function Hero() {
           duration: 0.3,
           ease: "cubic-bezier(0.22, 1, 0.36, 1)",
         },
-        "-=0.1"
+        "-=0.1",
       )
 
       // Play - rolls up from below again (60ms stagger)
@@ -150,7 +150,7 @@ export function Hero() {
           duration: 0.4,
           ease: "power2.out",
         },
-        "-=0.54"
+        "-=0.54",
       ) // 60ms stagger
       .to(
         playRef.current,
@@ -159,7 +159,7 @@ export function Hero() {
           duration: 0.3,
           ease: "cubic-bezier(0.22, 1, 0.36, 1)",
         },
-        "-=0.1"
+        "-=0.1",
       )
 
       // Text block - rolls up slightly from below, soft overshoot, gentle ease
@@ -172,7 +172,7 @@ export function Hero() {
           duration: 0.5,
           ease: "power2.out",
         },
-        "-=0.2"
+        "-=0.2",
       )
       .to(
         textBlockRef.current,
@@ -181,7 +181,7 @@ export function Hero() {
           duration: 0.3,
           ease: "cubic-bezier(0.22, 1, 0.36, 1)",
         },
-        "-=0.1"
+        "-=0.1",
       )
 
       // Image - slides in from right, starts 300ms after text begins
@@ -194,7 +194,7 @@ export function Hero() {
           duration: 0.5,
           ease: "power2.out",
         },
-        "-=0.2"
+        "-=0.2",
       );
   }, []);
 
@@ -223,18 +223,22 @@ export function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-center lg:-mt-24 mt-8 w-full flex-1 gap-8">
           <div ref={textBlockRef} className="text-left lg:w-1/2 w-full">
             <h5 className="w-full">
-            I'm Fausto, a Senior Product Designer with 15+ years of experience.
-              
+              I'm Fausto, a Senior Product Designer with 15+ years of
+              experience.
+            </h5>
+            <br />
+            <h5 className="w-full">
+              I help teams{" "}
+              <strong>design and scale marketplaces and SaaS products</strong>.
+              I blend strategy, research, and craft to drive growth and take
+              concepts from 0–1. More recently, I've been diving deep into
+              designing for <strong>AI-Powered</strong> experiences.
             </h5>
             <br />
             <h5 className="w-full">
               {" "}
-              I help teams design and scale marketplace and SaaS products. I blend  strategy, research, and craft to drive growth and launch 0–1 experiences.
-            </h5>
-            <br />
-            <h5 className="w-full">
-              {" "}
-              Currently at Momentoos, previously at The Muse and Warner Bros Digital Labs.
+              Currently at Momentoos, previously at The Muse and Warner Bros.
+              Digital Labs.
             </h5>
           </div>
           <div className="lg:w-1/2 w-full flex justify-center  lg:justify-end">

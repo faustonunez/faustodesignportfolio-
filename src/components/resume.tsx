@@ -22,20 +22,30 @@ export function Resume() {
               {/* Momentoos */}
               <ResumeTextBlock
                 title="Momentoos"
-                smallText="12/17 - Present | Founder and Principal Designer"
+                smallText="Founder and Principal Designer"
+                date="12/2017 - Present"
                 description={
                   <>
-                    Founder and principal product designer for design studio focusing on product strategy and UX/UI. Led selective product <strong> design engagements for 12+ companies </strong> across marketplace, e-commerce, fintech, and construction tech, working on both early-stage initiatives and established platforms. Delivered foundational design systems, user research, and conversion-focused improvements that enabled clients to launch, fundraise, and scale.
+                    Founder and principal product designer for design studio
+                    focusing on product strategy and UX/UI. Led selective
+                    product{" "}
+                    <strong> design engagements for 12+ companies </strong>{" "}
+                    across marketplace, e-commerce, fintech, and construction
+                    tech, working on both early-stage initiatives and
+                    established platforms. Delivered foundational design
+                    systems, user research, and conversion-focused improvements
+                    that enabled clients to launch, fundraise, and scale.
                   </>
                 }
                 showList={true}
                 listItems={[
-                  
                   {
                     title: "AppliedLabs.io:",
                     text: (
                       <>
-                        A technology-based agency, where I led the conceptualization and design of multiple SaaS and eCommerce products.
+                        A technology-based agency, where I led the
+                        conceptualization and design of multiple SaaS and
+                        eCommerce products.
                       </>
                     ),
                   },
@@ -43,7 +53,9 @@ export function Resume() {
                     title: "CloudEstate:",
                     text: (
                       <>
-                       Led design for one of the first asset management applications, launching a beta MVP and creating a design system used for investor demos and client pitches.
+                        Led design for one of the first asset management
+                        applications, launching a beta MVP and creating a design
+                        system used for investor demos and client pitches.
                       </>
                     ),
                   },
@@ -51,7 +63,10 @@ export function Resume() {
                     title: "Buildbook.io:",
                     text: (
                       <>
-                        Advanced the mobile native app visual language and expanded on the various Buildbook’s user flows. Established a foundational design system for their first mobile app launch.
+                        Advanced the mobile native app visual language and
+                        expanded on the various Buildbook’s user flows.
+                        Established a foundational design system for their first
+                        mobile app launch.
                       </>
                     ),
                   },
@@ -60,10 +75,17 @@ export function Resume() {
 
               <ResumeTextBlock
                 title="The Muse"
-                smallText="09/21 - 06/25 | Senior Product Designer (Contract)"
+                smallText="Senior Product Designer (Contract)"
+                date="09/2021 - 06/2025"
                 description={
                   <>
-                   Led design efforts on the Candidate and Growth squads, for The Muse’s B2C and B2B audience  (5M+ jobseekers, 1,000 employers). Focusing on continuously improving the job seeker experience for growth, activation and retention. <strong>Spearheaded 66+ user interviews in one year</strong> that helped inform roadmap and product strategy direction for multiple key projects. 
+                    Led design efforts on the Candidate and Growth squads, for
+                    The Muse’s B2C and B2B audience  (5M+ jobseekers, 1,000
+                    employers). Focusing on continuously improving the job
+                    seeker experience for growth, activation and retention.{" "}
+                    <strong>Spearheaded 66+ user interviews in one year</strong>{" "}
+                    that helped inform roadmap and product strategy direction
+                    for multiple key projects.
                   </>
                 }
                 showList={true}
@@ -72,7 +94,8 @@ export function Resume() {
                     title: "",
                     text: (
                       <>
-                        Led design for Maya, an AI-powered career coach driving a 25% increase in content engagement.
+                        Led design for Maya, an AI-powered career coach driving
+                        a 25% increase in content engagement.
                       </>
                     ),
                   },
@@ -80,7 +103,9 @@ export function Resume() {
                     title: "",
                     text: (
                       <>
-                       Led the Search Page redesign, reducing time-to-application by 40% and driving a 150% increase in successful job applications
+                        Led the Search Page redesign, reducing
+                        time-to-application by 40% and driving a 150% increase
+                        in successful job applications
                       </>
                     ),
                   },
@@ -88,7 +113,10 @@ export function Resume() {
                     title: "",
                     text: (
                       <>
-                        Redesigned and optimized the Job Details Page, contributing to the most successful year in company history for job applications, with a 40% increase post-launch.
+                        Redesigned and optimized the Job Details Page,
+                        contributing to the most successful year in company
+                        history for job applications, with a 40% increase
+                        post-launch.s
                       </>
                     ),
                   },
@@ -98,7 +126,8 @@ export function Resume() {
               {/* Warner Bros. Digital Labs */}
               <ResumeTextBlock
                 title="Warner Bros. Digital Labs"
-                smallText="06/2015 - 11/2017 | Experience Designer"
+                smallText="Experience Designer"
+                date="06/2015 - 11/2017"
                 description={
                   <>
                     Responsible for the user experience of Warner Bros. Digital
@@ -155,7 +184,8 @@ export function Resume() {
               {/* delivery.com */}
               <ResumeTextBlock
                 title="delivery.com"
-                smallText="01/2010 - 07/2015 | Senior Product Designer"
+                smallText="Senior Product Designer"
+                date="01/2010 - 07/2015"
                 description={
                   <>
                     Oversaw delivery.com's user experience for the client and
@@ -218,44 +248,49 @@ export function Resume() {
                 description={undefined}
               />
             </div>
+
+            <a
+              href="https://www.dropbox.com/scl/fi/xkqwzrbt5yct9i0iixp1o/fausto-nunez-resume-2026-2.pdf?rlkey=c94qotxo7mu7edkyb7b6aduux&dl=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 mb-12 flex w-full items-center justify-center gap-2 rounded-full border-2 border-[#2D373E] bg-transparent px-6 py-3 font-lato text-base font-medium text-[#2D373E] transition-colors duration-200 hover:border-black hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-[#2D373E]/50 focus:ring-offset-2"
+            >
+              Download Full Resume
+              <span aria-hidden>→</span>
+            </a>
           </div>
           <div id="Skills" className=" md:w-[30%] w-full">
             <h6 className="mb-5 ">Skills</h6>
             <div className="mb-10">
-              <div className="mb-10">
-                <h5>Coding</h5>
-                <p>
-                  HTML, CSS, Javascript, React JS, Git, GitHub, Vercel, VSCode,
-                  Cursor AI, Lovable, Figma Make
-                </p>
-              </div>
               <h5>Tools</h5>
               <p>
-                Adobe Creative Suite, Figma, Sketch, Abstract, Flinto,
-                Procreate, Principle, Zeplin, Framer X, Lottie, Asana, Jira,
-                Trello, Miro, Whimsical, Airtable, Webflow, Google Analytics,
-                Optimizely, Google Suite
+                <strong>Primary:</strong> Figma, Figma Make, Adobe Creative,
+                Cursor AI, Claude, Notebook LM, Gemini, Notion, Fig Jam,
+                Optimizely, UserBrain, Blender
               </p>
             </div>
-
             <div className="mb-10">
               <h5>Visual</h5>
               <p>
-                Composition, Interaction Design, Motion Design, Graphic Design,
-                Design Standards, Design Systems, Atomic Design, Whiteboarding,
-                Information Architecture, Prototyping, Story Telling, Material
-                Design, Apple HIG, Gestalt Principles, Color, Typography
+                Design Systems, Interaction Design, Information Architecture,
+                Prototyping, Storytelling, Material Design, Apple Human
+                Interface Guidelines, Gestalt Principles, Typography, Color
+                Theory
               </p>
             </div>
             <div className="mb-10">
               <h5>Research</h5>
               <p>
-                Heuristic Evaluation, Product Design Thinking, Competitive, Lean
-                UX, Design Sprints, User Interviews, Contextual Inquiry, Survey
-                Design, Focus Groups, Participatory Design, Data Analysis:
-                Quantitative & Qualitative, Journey Mapping, Card Sorting,
-                Usability Testing, A/B Testing
+                Heuristic Evaluation, Product Design Thinking, Competitive
+                Analysis, Lean UX, Design Sprints, User Interviews, Contextual
+                Inquiry, Survey Design, Participatory Design, Quantitative and
+                Qualitative Research, Journey Mapping, Card Sorting, Usability
+                Testing, A/B Testing
               </p>
+            </div>
+            <div className="mb-10">
+              <h5>Languages</h5>
+              <p>Fluent in English and Spanish</p>
             </div>
           </div>
         </div>
