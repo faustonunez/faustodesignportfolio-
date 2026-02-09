@@ -251,14 +251,17 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <Arrow
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 lg:mb-10 mb-10 animate-bounce lg:block hidden cursor-pointer"
-        onClick={() => {
-          document
-            .getElementById("work")
-            ?.scrollIntoView({ behavior: "smooth" });
-        }}
-      />
+      <div className="flex flex-col items-center pb-6 lg:mb-10 mb-10">
+        <p className="mb-6">View Work</p>
+        <Arrow
+          className="animate-bounce lg:block hidden cursor-pointer"
+          onClick={() => {
+            document
+              .getElementById("work")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        />
+      </div>
     </div>
   );
 }

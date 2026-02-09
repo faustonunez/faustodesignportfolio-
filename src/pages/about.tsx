@@ -103,9 +103,9 @@ export function About() {
             <div className="w-full prose prose-[54px]">
               <h5 className=" mb-6 w-auto">
                 Hi, I’m Fausto and I'm based in NYC. I've been in product design
-                for the last 15 years. I consider myself a creative at heart.
-                Ever since I was a kid, art and design have been a fundamental
-                part of me and one of the lenses through which I see life.
+                for the last 15 years. I'm a creative at heart. Ever since I was
+                a kid, art and design have been a fundamental part of me and one
+                of the lenses through which I see life.
               </h5>
               <h5 className=" mb-6">
                 I specialize in Marketplace and SaaS with a focus on consumer

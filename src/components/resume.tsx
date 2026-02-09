@@ -22,7 +22,7 @@ export function Resume() {
               {/* Momentoos */}
               <ResumeTextBlock
                 title="Momentoos"
-                smallText="Founder and Principal Designer"
+                smallText="Founder and Principal Product Designer"
                 date="12/2017 - Present"
                 description={
                   <>
