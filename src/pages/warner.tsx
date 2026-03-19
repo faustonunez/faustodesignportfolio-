@@ -82,8 +82,7 @@ export function Warner() {
               }
               className="]"
             />
-            roperties, DramaFever, Doc Club, and Shutter. The grand vision for
-            the business
+
             <div className="flex  md:flex-row flex-col   pt-8 space-x-8 md:space-y-0 space-y-8 ">
               <div className="space-y-4">
                 <p>
