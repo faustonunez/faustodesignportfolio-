@@ -78,7 +78,7 @@ export function Warner() {
             <MainTextBlock
               title={"The Problem"}
               description={
-                "DramaFever's core business had always been video streaming. At the time that | joined, we had three different phad been to continue creating channels for niche audiences. The problem was that our existing infrastructure and workflow at that time did not allow us to quickly and easily create new channels. Every time, we had to start from scratch. We needed a faster and smarter way to work."
+                "DramaFever's core business had always been video streaming. When I joined, we had three different properties, DramaFever, Doc Club, and Shutter. The business's grand vision was to continue creating channels for niche audiences. The problem was that our existing infrastructure and workflow then did not allow us to quickly and easily create new channels. Each time, we had to start from scratch. We needed a faster and smarter way to work."
               }
               className="]"
             />
