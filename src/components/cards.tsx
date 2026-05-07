@@ -11,6 +11,8 @@ export interface HorizontalCardProps {
   badges?: string[];
   circleColor?: string;
   link?: string;
+  /** Merged onto the image; use to override width (e.g. show `circleColor`) or add shadows. */
+  imageClassName?: string;
 }
 
 interface BadgeProps {
@@ -35,6 +37,7 @@ export function HorizontalCard({
   badges = [],
   circleColor = "#EDEEF5",
   link,
+  imageClassName = "",
 }: HorizontalCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const circleRef = useRef<HTMLDivElement>(null);
@@ -104,7 +107,7 @@ export function HorizontalCard({
         <img
           src={image}
           alt={altText}
-          className="relative z-10 lg:w-[80%] w-full h-auto"
+          className={`relative z-10 h-auto w-full lg:w-[80%] ${imageClassName}`}
         />
       </div>
       <div
