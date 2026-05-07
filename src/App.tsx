@@ -25,6 +25,7 @@ import { CloudEstate } from "./pages/cloudestate";
 import { TheMuseJDP } from "./pages/themuse-JDP";
 import { TheMuseMaya } from "./pages/themuse-Maya";
 import { TheMuseSearch } from "./pages/themuse-search";
+import { TheMuseRebrand } from "./pages/themuse-rebrand";
 import { Sandbox } from "./pages/sandbox";
 
 function App() {
@@ -55,6 +56,7 @@ function AppContent() {
     "/themuse-JDP",
     "/themuse-Maya",
     "/themuse-search",
+    "/themuse-rebrand",
   ];
   const isDarkMode = darkRoutes.includes(location.pathname);
 
@@ -74,6 +76,7 @@ function AppContent() {
         <Route path="/themuse-JDP" element={<TheMuseJDP />} />
         <Route path="/themuse-Maya" element={<TheMuseMaya />} />
         <Route path="/themuse-search" element={<TheMuseSearch />} />
+        <Route path="/themuse-rebrand" element={<TheMuseRebrand />} />
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/sandbox" element={<Sandbox />} />
       </Routes>

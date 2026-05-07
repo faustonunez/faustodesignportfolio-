@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type CSSProperties } from "react";
 
 // Utility to prevent typographic widows by replacing the space between the last two words with a non-breaking space
 function preventWidows(text: string): string {
@@ -44,6 +44,8 @@ export interface MainTextBlockProps {
   descriptionClassName?: string;
   showTitle?: boolean;
   showDescription?: boolean;
+  /** Applied to the outer wrapper (helps override global margin/padding). */
+  style?: CSSProperties;
 }
 
 export function MainTextBlock({
@@ -56,6 +58,7 @@ export function MainTextBlock({
   descriptionClassName = "",
   showTitle = true,
   showDescription = true,
+  style,
 }: MainTextBlockProps) {
   const themeClass = isDarkTheme ? "text-white" : "text-black";
   // Process the title to avoid text widows
@@ -63,7 +66,7 @@ export function MainTextBlock({
     typeof title === "string" ? preventWidows(title) : title;
 
   return (
-    <div className={`mb-10 ${className}`}>
+    <div className={`mb-10 ${className}`} style={style}>
       <div id="content" className={contentClassName}>
         {showTitle && title && (
           <h4 className={`md:mb-4 mb-2 ${themeClass} ${titleClassName}`}>

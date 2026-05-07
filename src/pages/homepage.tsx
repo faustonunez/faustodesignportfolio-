@@ -4,6 +4,7 @@ import BuildbookImg from "../assets/images/homepage/buildbook-img.png";
 import CloudEstateImg from "../assets/images/homepage/cloudestate-img.png";
 import TheMuseJpdImg from "../assets/images/homepage/themuse-jdp.png";
 import TheMuseMayaImg from "../assets/images/homepage/themuse-maya.png";
+import TheMuseRebrandHeroImg from "../assets/images/homepage/TM-Rebrand-cover-Img.png";
 import { Helmet } from "react-helmet-async";
 
 import { HorizontalCard } from "../components/cards";
@@ -29,37 +30,38 @@ export function Homepage() {
         >
           <div className="flex responsive-width flex-col gap-40 justify-center items-center">
             <HorizontalCard
-              image={TheMuseJpdImg}
-              subtitle="The Muse"
-              title="Driving Job Apply Growth for The Muse’s JDP"
-              altText="Screenshot of Buildbook construction management design"
-              className="w-full h-auto"
-              reverseOrder={true}
-              badges={["User Research", "B2C", "UX", "UI", "Design System"]}
-              circleColor="#F8F9FF"
-              link="/themuse-JDP"
-            />
-            <HorizontalCard
               image={TheMuseMayaImg}
               subtitle="The Muse"
               title="Rethinking Content Discovery Through AI"
-              altText="Screenshot of Buildbook construction management design"
+              altText="Screenshot of The Muse Maya AI content discovery"
               className="w-full h-auto"
-              reverseOrder={false}
+              reverseOrder={true}
               badges={["AI", "UX", "UI", "Prototyping"]}
               circleColor="#F8F9FF"
               link="/themuse-Maya"
             />
             <HorizontalCard
-              image={BuildbookImg}
-              subtitle="BUILDBOOK"
-              title="New approach to construction management"
-              altText="Screenshot of Buildbook construction management design"
+              image={TheMuseJpdImg}
+              subtitle="The Muse"
+              title="Driving Job Apply Growth for The Muse’s JDP"
+              altText="Screenshot of The Muse Job Description Page"
+              className="w-full h-auto"
+              reverseOrder={false}
+              badges={["User Research", "B2C", "UX", "UI", "Design System"]}
+              circleColor="#F8F9FF"
+              link="/themuse-JDP"
+            />
+            <HorizontalCard
+              image={TheMuseRebrandHeroImg}
+              subtitle="The Muse"
+              title="Rebrand and Design System Evolution"
+              altText="The Muse rebrand hero visual"
               className="w-full h-auto"
               reverseOrder={true}
-              badges={["Mobile", "B2b", "B2C", "UX", "UI", "Design System"]}
-              circleColor="#F8F9FF"
-              link="/buildbook"
+              badges={["Branding", "UX", "UI", "Design System"]}
+              circleColor="#EDEEF5"
+              link="/themuse-rebrand"
+              imageClassName="shadow-[0px_8px_19px_0px_rgba(0,0,0,0.10)]"
             />
             <HorizontalCard
               image={CloudEstateImg}
@@ -73,12 +75,23 @@ export function Homepage() {
               link="/cloudestate"
             />
             <HorizontalCard
+              image={BuildbookImg}
+              subtitle="BUILDBOOK"
+              title="New approach to construction management"
+              altText="Screenshot of Buildbook construction management design"
+              className="w-full h-auto"
+              reverseOrder={true}
+              badges={["Mobile", "B2b", "B2C", "UX", "UI", "Design System"]}
+              circleColor="#F8F9FF"
+              link="/buildbook"
+            />
+            <HorizontalCard
               image={WBVideoPlayerImg}
               subtitle="WARNER BROS"
               title="Designing an adaptable video player"
               altText="Screenshot of Warner Bros adaptable video player design"
               className="w-full h-auto"
-              reverseOrder={true}
+              reverseOrder={false}
               badges={["UX", "UI", "Design System"]}
               circleColor="#EDEEF5"
               link="/videoplayer"
@@ -89,7 +102,7 @@ export function Homepage() {
               title="Systemizing a video streaming experience"
               altText="Screenshot of Warner Bros video streaming system design"
               className="w-full h-auto"
-              reverseOrder={false}
+              reverseOrder={true}
               badges={["UX", "UI", "Design System"]}
               circleColor="#FBF3EE"
               link="/warner"

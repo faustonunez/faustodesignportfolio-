@@ -294,7 +294,7 @@ export function Buildbook() {
             </div>
             <div className="flex flex-col items-center w-full">
               <video
-                src="https://dl.dropboxusercontent.com/s/1zlk261dgbttao8/buildbook-project-view-small-2.mp4?dl=0"
+                src="https://dl.dropboxusercontent.com/scl/fi/8jzuzeizciyve15zhlsxr/buildbook-message.mp4?e=1&dl=1"
                 loop
                 autoPlay
                 className="w-[80%] h-auto"
