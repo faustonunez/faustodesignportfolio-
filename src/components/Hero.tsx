@@ -232,7 +232,7 @@ export function Hero() {
               <strong>design and scale marketplaces and SaaS products</strong>.
               I blend strategy, research, and craft to drive growth and take
               concepts from 0–1. More recently, I've been diving deep into
-              designing for <strong>AI-Powered</strong> experiences.
+              designing for <strong>AI-powered</strong> experiences.
             </h5>
             <br />
             <h5 className="w-full">

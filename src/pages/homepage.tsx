@@ -77,18 +77,18 @@ export function Homepage() {
             <HorizontalCard
               image={BuildbookImg}
               subtitle="BUILDBOOK"
-              title="New approach to construction management"
+              title="A New Approach to Construction Management"
               altText="Screenshot of Buildbook construction management design"
               className="w-full h-auto"
               reverseOrder={true}
-              badges={["Mobile", "B2b", "B2C", "UX", "UI", "Design System"]}
+              badges={["Mobile", "B2B", "B2C", "UX", "UI", "Design System"]}
               circleColor="#F8F9FF"
               link="/buildbook"
             />
             <HorizontalCard
               image={WBVideoPlayerImg}
-              subtitle="WARNER BROS"
-              title="Designing an adaptable video player"
+              subtitle="WARNER BROS."
+              title="Designing an Adaptable Video Player"
               altText="Screenshot of Warner Bros adaptable video player design"
               className="w-full h-auto"
               reverseOrder={false}
@@ -98,8 +98,8 @@ export function Homepage() {
             />
             <HorizontalCard
               image={WarnerArchiveImg}
-              subtitle="WARNER BROS"
-              title="Systemizing a video streaming experience"
+              subtitle="WARNER BROS."
+              title="Systematizing a Video Streaming Experience"
               altText="Screenshot of Warner Bros video streaming system design"
               className="w-full h-auto"
               reverseOrder={true}
