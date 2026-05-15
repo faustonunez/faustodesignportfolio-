@@ -751,13 +751,7 @@ export function TheMuseRebrand() {
         <div className="responsive-section-y-case-study bg-brand-primary-20 flex flex-col justify-center items-center">
           <div className="responsive-width flex flex-col space-y-8 mt-10">
             <MainTextBlock
-              title={
-                <>
-                  We also expanded the new branding and design system
-                  <br />
-                  to our Employer Hub
-                </>
-              }
+              title="We also expanded the new branding and design system to our Employer Hub"
               description=""
               className="w-full text-center !mb-0"
               showDescription={false}

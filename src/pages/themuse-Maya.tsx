@@ -55,7 +55,7 @@ export function TheMuseMaya() {
               <MainTextBlock
                 title={"About"}
                 description={
-                  "The Muse is the go-to destination for the next-generation workforce to research companies and careers. More than 70 million visitors each year trust The Muse, to help them win at work."
+                  "The Muse is the go-to destination for the next-generation workforce to research companies and careers. More than 70 million visitors each year trust The Muse to help them win at work."
                 }
                 className="md:w-[60%] w-full"
               />
@@ -85,7 +85,7 @@ export function TheMuseMaya() {
             <MainTextBlock
               title={"The Problem "}
               description={
-                "The Muse and FGB have over 24,000 career articles on job searches, career paths, and workplace success—but most were hard to find without Google. Internally, search was limited: articles weren’t indexed, and curated sections or pagination didn’t solve the problem."
+                "The Muse and Fairygodboss have over 24,000 career articles on job searches, career paths, and workplace success, but most were hard to find without Google. Internal search was limited — articles weren't indexed, and curated sections couldn't surface the depth of the library."
               }
               className=" responsive-width-case-study"
             />
@@ -107,7 +107,7 @@ export function TheMuseMaya() {
               <MainTextBlock
                 title={"Competitive Research"}
                 description={
-                  "To better understand the existing AI landscape within our competition and other industries, I conducted a competitive research that helped us shed light on our current position and how AI was being utilized at that time. "
+                  "I ran a competitive audit across our direct competitors and adjacent industries to map how AI was being integrated into content and search experiences, and where The Muse stood."
                 }
                 className=" responsive-width-case-study"
               />
@@ -167,7 +167,7 @@ export function TheMuseMaya() {
               <MainTextBlock
                 title={"Designing an identity for our AI Agent"}
                 description={
-                  "We wanted to give our AI its own unique identity, we named it Maya. Along with this, I also helped explore a few logo design ideas, which we wanted to be based on The Muse’s existing branding, to feel familiar and differentiated enough."
+                  "We wanted to give our AI its own unique identity; we named it Maya. Along with this, I also helped explore a few logo design ideas, which we wanted to be based on The Muse’s existing branding, to feel familiar and differentiated enough."
                 }
                 className=" responsive-width-case-study"
               />
@@ -194,7 +194,7 @@ export function TheMuseMaya() {
               <MainTextBlock
                 title={"The Standalone chatbot interface"}
                 description={
-                  "After several rounds of design explorations, we landed on this design.  We started with a Chatbot interface in a standalone page that prompts the user to get started. All answers were going to be from Muse articles, company pages, job posts, and link to relevant pages."
+                  "After several rounds of design explorations, we landed on this design.  We started with a chatbot interface in a standalone page that prompts the user to get started. All answers were going to be from The Muse's articles, company pages, job posts, and would link to relevant pages."
                 }
                 className=" responsive-width-case-study"
               />
@@ -336,7 +336,7 @@ export function TheMuseMaya() {
               <MainTextBlock
                 title={"Maya Widget"}
                 description={
-                  "For future iterations, we planned on building an Maya Widget that would give user access to Maya throughout different parts of the site experience. "
+                  "For future iterations, we planned on building a Maya widget that would give users access to Maya throughout different parts of the site experience. "
                 }
                 className=" responsive-width-case-study"
               />
@@ -387,7 +387,8 @@ export function TheMuseMaya() {
                 </li>
                 <li className="custom-li text-left">
                   <>
-                  We saw a <strong>25% content engagement increase</strong> in overall career content.
+                    We saw a <strong>25% content engagement increase</strong> in
+                    overall career content.
                   </>
                 </li>
                 <li className="custom-li text-left">

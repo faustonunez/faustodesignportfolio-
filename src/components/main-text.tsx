@@ -1,4 +1,5 @@
 import React, { type CSSProperties } from "react";
+import { toTitleCase } from "@/utils/toTitleCase";
 
 // Utility to prevent typographic widows by replacing the space between the last two words with a non-breaking space
 function preventWidows(text: string): string {
@@ -44,6 +45,8 @@ export interface MainTextBlockProps {
   descriptionClassName?: string;
   showTitle?: boolean;
   showDescription?: boolean;
+  /** Skip Chicago title case for string titles (e.g. intentional casing). */
+  disableTitleCase?: boolean;
   /** Applied to the outer wrapper (helps override global margin/padding). */
   style?: CSSProperties;
 }
@@ -58,12 +61,16 @@ export function MainTextBlock({
   descriptionClassName = "",
   showTitle = true,
   showDescription = true,
+  disableTitleCase = false,
   style,
 }: MainTextBlockProps) {
   const themeClass = isDarkTheme ? "text-white" : "text-black";
-  // Process the title to avoid text widows
   const processedTitle =
-    typeof title === "string" ? preventWidows(title) : title;
+    typeof title === "string"
+      ? preventWidows(
+          disableTitleCase ? title.trim() : toTitleCase(title.trim()),
+        )
+      : title;
 
   return (
     <div className={`mb-10 ${className}`} style={style}>
