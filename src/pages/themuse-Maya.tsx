@@ -36,11 +36,11 @@ export function TheMuseMaya() {
         <title> The Muse - Maya </title>
         <meta
           name="description"
-          content="Rethinking Content Discovery Through AI"
+          content="Reimagining career guidance through AI"
         />
       </Helmet>
       <HeaderMain
-        headingText={"Rethinking Content Discovery Through AI"}
+        headingText={"Reimagining career guidance through AI"}
         imgSrc={TheMuseJDPImg}
       />
 

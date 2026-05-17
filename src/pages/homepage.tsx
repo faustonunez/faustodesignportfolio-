@@ -32,7 +32,7 @@ export function Homepage() {
             <HorizontalCard
               image={TheMuseMayaImg}
               subtitle="The Muse"
-              title="Rethinking Content Discovery Through AI"
+              title="Reimagining career guidance through AI"
               altText="Screenshot of The Muse Maya AI content discovery"
               className="w-full h-auto"
               reverseOrder={true}
@@ -54,7 +54,7 @@ export function Homepage() {
             <HorizontalCard
               image={TheMuseRebrandHeroImg}
               subtitle="The Muse"
-              title="Rebrand and Design System Evolution"
+              title="Unifying brand and system at The Muse "
               altText="The Muse rebrand hero visual"
               className="w-full h-auto"
               reverseOrder={true}

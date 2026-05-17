@@ -22,6 +22,10 @@ export function ResumeTextBlock({
   listItems = [],
   showList = false,
 }: HorizontalCardProps) {
+  void description;
+  void listItems;
+  void showList;
+
   return (
     <div className="mb-10">
       <div id="content">

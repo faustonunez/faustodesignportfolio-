@@ -209,7 +209,7 @@ export function TheMuseRebrand() {
       <div className="flex justify-center items-center bg-[#1b1d27] w-full h-screen">
         <div className="responsive-width h-full flex flex-col items-center pt-[124px] sm:pt-[156px] md:pt-[170px] lg:pt-[184px] pb-6 md:pb-10 box-border">
           <h2 className="mb-3 md:mb-5 lg:w-[90%] w-full text-white text-center shrink-0">
-            The Muse&apos;s Rebranding and Design System Evolution
+            Unifying The Muse's brand and design system
           </h2>
           <div className="w-full flex-1 min-h-0 flex items-end justify-center">
             <img
