@@ -17,6 +17,7 @@ import { MenuModal } from "./components/menu-modal";
 
 // Page Components
 import { Homepage } from "./pages/homepage";
+import { Projects } from "./pages/projects";
 import { About } from "./pages/about";
 import { VideoPlayer } from "./pages/videoplayer";
 import { Warner } from "./pages/warner";
@@ -68,6 +69,7 @@ function AppContent() {
 
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/videoplayer" element={<VideoPlayer />} />
         <Route path="/warner" element={<Warner />} />
@@ -77,8 +79,8 @@ function AppContent() {
         <Route path="/themuse-Maya" element={<TheMuseMaya />} />
         <Route path="/themuse-search" element={<TheMuseSearch />} />
         <Route path="/themuse-rebrand" element={<TheMuseRebrand />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/sandbox" element={<Sandbox />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
       <Footer />
